@@ -34,8 +34,8 @@ function CenteredTabs({location, match, history, ...props}) {
         textColor="primary"
         centered
       >
-            <Tab label="Projects" value="/"/>
-            <Tab label="About Me" value="/about-me"/>
+            <Tab label="Index" value="/"/>
+            <Tab label="More" value="/about-me"/>
       </Tabs>
     </Paper>
   );

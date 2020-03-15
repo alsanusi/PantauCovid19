@@ -9,6 +9,8 @@ import { withRouter } from "react-router";
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
+      borderRadius: 0, 
+      boxShadow: "none",
     },
   }));
 
@@ -35,7 +37,7 @@ function CenteredTabs({location, match, history, ...props}) {
         centered
       >
             <Tab label="Index" value="/"/>
-            <Tab label="More" value="/about-me"/>
+            {/* <Tab label="More" value="/about-me"/> */}
       </Tabs>
     </Paper>
   );

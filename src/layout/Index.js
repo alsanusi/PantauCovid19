@@ -8,29 +8,28 @@ import CoronaApi from '../api/CoronaApi';
 import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+import Animation from '../components/Animation';
+import Moment from 'moment';
 
 const basicStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-  paper: {
-    padding: theme.spacing(3),
-    color: theme.palette.text.secondary,
-    marginTop: 20,
-    borderRadius: 0, 
-    boxShadow: "none"
-  },
   paperCard: {
-    padding: theme.spacing(3),
-    textAlign: 'center',
+    padding: theme.spacing(2),
+    marginTop: 20,
     color: theme.palette.text.secondary,
     borderRadius: 0, 
-    boxShadow: "none"
+    boxShadow: "none",
   },
 }));
 
 const cardStyles = makeStyles({
   root: {
+    minWidth: 275,
+    borderTop: `4px solid`
+  },
+  otherRoot: {
     minWidth: 275,
   },
   bullet: {
@@ -46,7 +45,35 @@ const cardStyles = makeStyles({
   },
 });
 
-function CardDesign({ ...props }) {
+function CardTitle({ ...props }) {
+  const classes = cardStyles();
+
+  return (
+    <div>
+    <Card className={classes.otherRoot} style={{ boxShadow: 'none' }}>
+      <CardContent>
+        <div style={{display: "flex"}}>
+          <div style={{width: "30%", alignSelf: "center"}}>
+            <Typography className={classes.title} gutterBottom>
+              <Animation json={require("../assets/lottie/loading.json")}/>
+            </Typography>
+          </div>
+          <div style={{width: "70%", alignSelf: "center", textAlign: "left"}}>
+              <Typography variant="h4" component="h2" style={{fontWeight: "bold"}}>
+                {"INDONESIA"}
+              </Typography>
+              <Typography variant="body2" component="p">
+                {props.date}
+              </Typography>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+    </div>
+  );
+}
+
+function CardDetail({ ...props }) {
   const classes = cardStyles();
 
   return (
@@ -54,13 +81,13 @@ function CardDesign({ ...props }) {
     <Card className={classes.root}>
       <CardContent>
         <div style={{display: "flex"}}>
-          <div style={{width: "50%", alignSelf: "center"}}>
+          <div style={{width: "30%", alignSelf: "center"}}>
             <Typography className={classes.title} gutterBottom>
               {props.img}
             </Typography>
           </div>
-          <div style={{width: "50%", textAlign: "right"}}>
-            <Typography variant="h2" component="h2">
+          <div style={{width: "70%", textAlign: "right"}}>
+            <Typography variant="h2" component="h2" style={{fontWeight: "bold"}}>
               {props.value}
             </Typography>
             <Typography variant="body2" component="p">
@@ -108,30 +135,32 @@ export default function Dashboard() {
     return dataFilter[0];
   }
 
+  const filterDate = (date) => {
+    return Moment(date).utc().format('DD MMMM YYYY - h:mm:ss a.')
+  }
+
   return (
     <div className={classes.root}>
     <Menu/>
-      <Grid container>
-        <Grid item md={4} xs={12}>
-          <Paper className={classes.paper}>
-            {"Live in Indonesia"}
-          </Paper>
-        </Grid>
-      </Grid>
       <Grid container spacing={1}>
-        <Grid item md={4} xs={12}>
+        <Grid item md={3} xs={12}>
           <Paper className={classes.paperCard}>
-            <CardDesign img={<PeopleAltIcon style={{fontSize: 60}}/>} value={indonesianData.confirmed} description={"Total Confirmed Cases."} />
+            <CardTitle date={filterDate(indonesianData.dateAsOf)} />
           </Paper>
         </Grid>
-        <Grid item md={4} xs={12}>
+        <Grid item md={3} xs={12}>
           <Paper className={classes.paperCard}>
-            <CardDesign img={<FavoriteIcon style={{fontSize: 60}}/>} value={indonesianData.recovered} description={"Total People Recovered."} />
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 60}}/>} value={indonesianData.confirmed} description={"Total Confirmed Cases."} />
           </Paper>
         </Grid>
-        <Grid item md={4} xs={12}>
+        <Grid item md={3} xs={12}>
+          <Paper className={classes.paperCard}>
+            <CardDetail img={<FavoriteIcon style={{fontSize: 60}}/>} value={indonesianData.recovered} description={"Total People Recovered."} />
+          </Paper>
+        </Grid>
+        <Grid item md={3} xs={12}>
         <Paper className={classes.paperCard}>
-            <CardDesign img={<NotInterestedIcon style={{fontSize: 60}}/>} value={indonesianData.deaths} description={"Total People Death."} />
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 60}}/>} value={indonesianData.deaths} description={"Total People Death."} />
           </Paper>
         </Grid>
       </Grid>

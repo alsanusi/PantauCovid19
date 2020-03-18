@@ -2,7 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Menu from './Menu';
-import IndonesianData from './Card/Indonesia'
+import IndonesianData from './Card/Indonesia';
+import GlobalData from './Card/Global';
+import Header from './Card/Header';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -23,6 +25,12 @@ export default function CenteredGrid() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Menu/>
+        </Grid>
+        {/* <Grid item xs={12}>
+          <Header/>
+        </Grid> */}
+        <Grid item xs={12}>
+          <GlobalData/>
         </Grid>
         <Grid item xs={12}>
           <IndonesianData/>

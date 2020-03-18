@@ -8,7 +8,7 @@ class CoronaApi extends BaseApi {
         return api;
     }
 
-    static getWorldData() {
+    static getGlobalData() {
         const api = new BaseApi();
         api.call(api.https().get(`http://api.coronatracker.com/v2/stats`));
         return api;

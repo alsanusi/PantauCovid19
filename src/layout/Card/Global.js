@@ -62,7 +62,7 @@ function CardTitle({ ...props }) {
           </div>
           <div style={{width: "70%", alignSelf: "center", textAlign: "left"}}>
               <Typography variant="h4" component="h2" style={{fontWeight: "bold"}}>
-                {"INDONESIA"}
+                {"GLOBAL"}
               </Typography>
               <Typography variant="body2" component="p">
                 {props.date}
@@ -105,37 +105,28 @@ function CardDetail({ ...props }) {
 
 export default function Dashboard() {
   const classes = basicStyles();
-  const [indonesianData, setIndonesianData] = useState({
-    countryCode: '',
-    countryName: '',
+  const [globalData, setGlobalData] = useState({
     confirmed: '',
     deaths: '',
     recovered: '',
-    dateAsOf: ''
+    created: ''
   });
 
   useEffect(() => {
-    CoronaApi.getIndonesianData().then({
+    CoronaApi.getGlobalData().then({
       complete:(response, e) => {
         if(e) 
           console.log(e)
          else 
-          setIndonesianData({
-            countryCode: filterIndonesiaData(response.data).countryCode,
-            countryName: filterIndonesiaData(response.data).countryName,
-            confirmed: filterIndonesiaData(response.data).confirmed,
-            deaths: filterIndonesiaData(response.data).deaths,
-            recovered: filterIndonesiaData(response.data).recovered,
-            dateAsOf: filterIndonesiaData(response.data).dateAsOf
+          setGlobalData({
+            confirmed: response.data.confirmed,
+            deaths: response.data.deaths,
+            recovered: response.data.recovered,
+            created: response.data.created
           })
       }
     })
   },[classes])
-
-  const filterIndonesiaData = (dataResponse) => {
-    let dataFilter = dataResponse.filter(x => x.countryName === "Indonesia");
-    return dataFilter[0];
-  }
 
   const filterDate = (date) => {
     return Moment(date).utc().format('DD MMMM YYYY - h:mm:ss a.')
@@ -143,27 +134,27 @@ export default function Dashboard() {
 
   return (
     <div className={classes.root}>
-      <Grid container justify="center">
+     <Grid container justify="center">
         <Grid item md={3} xs={12}>
           <Paper className={classes.paperCardHeader}>
-            <CardTitle date={filterDate(indonesianData.dateAsOf)} />
+            <CardTitle date={filterDate(globalData.dateAsOf)} />
           </Paper>
         </Grid>
       </Grid>
-      <Grid container justify="center" spacing={1}>
+     <Grid container justify="center" spacing={1}>
         <Grid item md={3} xs={12}>
           <Paper className={classes.paperCard}>
-            <CardDetail img={<PeopleAltIcon style={{fontSize: 60}}/>} value={indonesianData.confirmed} description={"Total Confirmed Cases."} />
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 60}}/>} value={globalData.confirmed} description={"Total Confirmed Cases."} />
           </Paper>
         </Grid>
         <Grid item md={3} xs={12}>
           <Paper className={classes.paperCard}>
-            <CardDetail img={<FavoriteIcon style={{fontSize: 60}}/>} value={indonesianData.recovered} description={"Total People Recovered."} />
+            <CardDetail img={<FavoriteIcon style={{fontSize: 60}}/>} value={globalData.recovered} description={"Total People Recovered."} />
           </Paper>
         </Grid>
         <Grid item md={3} xs={12}>
         <Paper className={classes.paperCard}>
-            <CardDetail img={<NotInterestedIcon style={{fontSize: 60}}/>} value={indonesianData.deaths} description={"Total People Death."} />
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 60}}/>} value={globalData.deaths} description={"Total People Death."} />
           </Paper>
         </Grid>
       </Grid>

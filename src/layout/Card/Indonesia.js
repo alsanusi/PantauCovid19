@@ -2,13 +2,12 @@ import React, {useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import Menu from './Menu';
 import { Card, CardContent, Typography } from '@material-ui/core';
-import CoronaApi from '../api/CoronaApi';
+import CoronaApi from '../../api/CoronaApi';
 import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
-import Animation from '../components/Animation';
+import Animation from '../../components/Animation';
 import Moment from 'moment';
 
 const basicStyles = makeStyles(theme => ({
@@ -54,9 +53,7 @@ function CardTitle({ ...props }) {
       <CardContent>
         <div style={{display: "flex"}}>
           <div style={{width: "30%", alignSelf: "center"}}>
-            <Typography className={classes.title} gutterBottom>
-              <Animation json={require("../assets/lottie/loading.json")}/>
-            </Typography>
+              <Animation json={require("../../assets/lottie/loading.json")}/>
           </div>
           <div style={{width: "70%", alignSelf: "center", textAlign: "left"}}>
               <Typography variant="h4" component="h2" style={{fontWeight: "bold"}}>
@@ -113,7 +110,7 @@ export default function Dashboard() {
   });
 
   useEffect(() => {
-    CoronaApi.getAllCountry().then({
+    CoronaApi.getIndonesianData().then({
       complete:(response, e) => {
         if(e) 
           console.log(e)
@@ -141,7 +138,6 @@ export default function Dashboard() {
 
   return (
     <div className={classes.root}>
-    <Menu/>
       <Grid container spacing={1}>
         <Grid item md={3} xs={12}>
           <Paper className={classes.paperCard}>

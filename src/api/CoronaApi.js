@@ -14,6 +14,12 @@ class CoronaApi extends BaseApi {
         return api;
     }
 
+    static getTopListData() {
+        const api = new BaseApi();
+        api.call(api.https().get(`http://api.coronatracker.com/v2/stats/top`));
+        return api;
+    }
+
 }
 
 export default CoronaApi;

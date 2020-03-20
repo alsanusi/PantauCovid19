@@ -7,8 +7,6 @@ import CoronaApi from '../../api/CoronaApi';
 import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
-import Animation from '../../components/Animation';
-import Moment from 'moment';
 
 const basicStyles = makeStyles(theme => ({
   root: {
@@ -17,12 +15,10 @@ const basicStyles = makeStyles(theme => ({
   paperCard: {
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
-    color: theme.palette.text.secondary,
     borderRadius: 0, 
     boxShadow: "none",
   },
   paperCardHeader: {
-    color: theme.palette.text.secondary,
     borderRadius: 0, 
     boxShadow: "none",
   },
@@ -49,32 +45,6 @@ const cardStyles = makeStyles({
   },
 });
 
-function CardTitle({ ...props }) {
-  const classes = cardStyles();
-
-  return (
-    <div>
-    <Card className={classes.otherRoot} style={{ boxShadow: 'none' }}>
-      <CardContent>
-        <div style={{display: "flex"}}>
-          <div style={{width: "30%", alignSelf: "center"}}>
-              <Animation json={require("../../assets/lottie/loading.json")}/>
-          </div>
-          <div style={{width: "70%", alignSelf: "center", textAlign: "left"}}>
-              <Typography variant="h4" component="h2" style={{fontWeight: "bold"}}>
-                {"GLOBAL"}
-              </Typography>
-              <Typography variant="body2" component="p">
-                {props.date}
-              </Typography>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
-    </div>
-  );
-}
-
 function CardDetail({ ...props }) {
   const classes = cardStyles();
 
@@ -89,7 +59,7 @@ function CardDetail({ ...props }) {
             </Typography>
           </div>
           <div style={{width: "70%", textAlign: "right"}}>
-            <Typography variant="h2" component="h2" style={{fontWeight: "bold"}}>
+            <Typography variant="h3" component="h2" style={{fontWeight: "bold"}}>
               {props.value}
             </Typography>
             <Typography variant="body2" component="p">
@@ -128,33 +98,26 @@ export default function Dashboard() {
     })
   },[classes])
 
-  const filterDate = (date) => {
-    return Moment(date).utc().format('DD MMMM YYYY - h:mm:ss a.')
-  }
-
   return (
     <div className={classes.root}>
-     <Grid container justify="center">
-        <Grid item md={3} xs={12}>
-          <Paper className={classes.paperCardHeader}>
-            <CardTitle date={filterDate(globalData.dateAsOf)} />
-          </Paper>
-        </Grid>
-      </Grid>
-     <Grid container justify="center" spacing={1}>
-        <Grid item md={3} xs={12}>
+     <Grid container direction="column" justify="center" spacing={3}>
+        <Grid item md xs={12}>
           <Paper className={classes.paperCard}>
-            <CardDetail img={<PeopleAltIcon style={{fontSize: 60}}/>} value={globalData.confirmed} description={"Total Confirmed Cases."} />
+           <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>
+              {"Current Global Status."}
+            </Typography>
+            <br/>
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 45}}/>} value={globalData.confirmed} description={"Total Confirmed Cases."} />
           </Paper>
         </Grid>
-        <Grid item md={3} xs={12}>
+        <Grid item md xs={12}>
           <Paper className={classes.paperCard}>
-            <CardDetail img={<FavoriteIcon style={{fontSize: 60}}/>} value={globalData.recovered} description={"Total People Recovered."} />
+            <CardDetail img={<FavoriteIcon style={{fontSize: 45}}/>} value={globalData.recovered} description={"Total People Recovered."} />
           </Paper>
         </Grid>
-        <Grid item md={3} xs={12}>
+        <Grid item md xs={12}>
         <Paper className={classes.paperCard}>
-            <CardDetail img={<NotInterestedIcon style={{fontSize: 60}}/>} value={globalData.deaths} description={"Total People Death."} />
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 45}}/>} value={globalData.deaths} description={"Total People Death."} />
           </Paper>
         </Grid>
       </Grid>

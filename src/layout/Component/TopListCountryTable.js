@@ -26,8 +26,12 @@ export default function SimpleTable() {
         if(e) 
           console.log(e)
          else 
-         data = [...response.data];
-         setTopListCountryData(data)
+         if(response) {
+            data = [...response.data];
+            setTopListCountryData(data)
+         } else {
+            setTopListCountryData([])
+         }
       }
     })
   },[classes])
@@ -51,12 +55,12 @@ export default function SimpleTable() {
         <TableBody>
           {topListCountryData.slice(0, 3).map(row => (
             <TableRow key={row.countryCode}>
-              <TableCell component="th" scope="row">
+              <TableCell component="th" scope="row" style={{fontWeight: "bold"}}>
                 {row.countryName}
               </TableCell>
-              <TableCell align="right">{row.confirmed}</TableCell>
-              <TableCell align="right">{row.recovered}</TableCell>
-              <TableCell align="right">{row.deaths}</TableCell>
+              <TableCell align="right">{row.confirmed.toLocaleString()}</TableCell>
+              <TableCell align="right">{row.recovered.toLocaleString()}</TableCell>
+              <TableCell align="right">{row.deaths.toLocaleString()}</TableCell>
             </TableRow>
           ))}
         </TableBody>

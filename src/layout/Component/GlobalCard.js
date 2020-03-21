@@ -107,17 +107,17 @@ export default function Dashboard() {
               {"Current Global Status."}
             </Typography>
             <br/>
-            <CardDetail img={<PeopleAltIcon style={{fontSize: 45}}/>} value={globalData.confirmed} description={"Total Confirmed Cases."} />
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 45}}/>} value={globalData.confirmed.toLocaleString()} description={"Total Confirmed Cases."} />
           </Paper>
         </Grid>
         <Grid item md xs={12}>
           <Paper className={classes.paperCard}>
-            <CardDetail img={<FavoriteIcon style={{fontSize: 45}}/>} value={globalData.recovered} description={"Total People Recovered."} />
+            <CardDetail img={<FavoriteIcon style={{fontSize: 45}}/>} value={globalData.recovered.toLocaleString()} description={"Total People Recovered."} />
           </Paper>
         </Grid>
         <Grid item md xs={12}>
         <Paper className={classes.paperCard}>
-            <CardDetail img={<NotInterestedIcon style={{fontSize: 45}}/>} value={globalData.deaths} description={"Total People Death."} />
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 45}}/>} value={globalData.deaths.toLocaleString()} description={"Total People Death."} />
           </Paper>
         </Grid>
       </Grid>

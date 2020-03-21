@@ -25,6 +25,7 @@ const cardStyles = makeStyles({
   },
   otherRoot: {
     minWidth: 275,
+    backgroundColor: '#F5F6FA'
   },
   bullet: {
     display: 'inline-block',
@@ -41,7 +42,7 @@ function CardTitle({ ...props }) {
 
   return (
     <div>
-    <Card className={classes.otherRoot} style={{ boxShadow: 'none' }}>
+    <Card className={classes.otherRoot} style={{ boxShadow: 'none', }}>
       <CardContent>
         <div style={{display: "flex"}}>
           <div style={{width: "30%", alignSelf: "center"}}>
@@ -49,7 +50,7 @@ function CardTitle({ ...props }) {
           </div>
           <div style={{width: "70%", alignSelf: "center", textAlign: "left"}}>
               <Typography variant="subtitle1">
-                {"Welcome"}
+                {"Welcome,"}
               </Typography>
               <Typography variant="h4" component="h2" style={{fontWeight: "bold", marginTop: "10px"}}>
                 {"HI, PEEPS!"}

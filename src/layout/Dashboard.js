@@ -10,6 +10,7 @@ import Header from './Component/Header';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    backgroundColor: '#F5F6FA'
   },
   padding: {
     paddingBottom: theme.spacing(2),
@@ -22,8 +23,30 @@ const useStyles = makeStyles(theme => ({
   paperLeft: {
     textAlign: 'center',
     color: theme.palette.text.secondary,
+  },
+  footer: {
+    position: 'fixed',
+    left: '0',
+    bottom: theme.spacing(2),
+    width: '100%',
+    textAlign: 'center',
+    fontSize: "12px"
   }
 }));
+
+function Footer() {
+  const classes = useStyles();
+
+  return(
+    <div className={classes.root}>
+    <Grid container justify="center" spacing={3} className={classes.padding}>
+      <Grid item md={12} xs={12} className={classes.footer}>
+        {"© Muhammad Alkautsar Sanusi."}
+      </Grid>
+    </Grid>
+  </div>
+  );
+}
 
 export default function CenteredGrid() {
   const classes = useStyles();
@@ -43,6 +66,9 @@ export default function CenteredGrid() {
         <Grid item md={7} xs={12}>
           <IndonesiaTableData/>
           <TopListCountryTableData/>
+        </Grid>
+        <Grid item md={12} xs={12}>
+          <Footer/>
         </Grid>
       </Grid>
     </div>

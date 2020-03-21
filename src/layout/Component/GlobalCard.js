@@ -11,12 +11,14 @@ import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 const basicStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    backgroundColor: '#F5F6FA'
   },
   paperCard: {
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
     borderRadius: 0, 
     boxShadow: "none",
+    backgroundColor: '#F5F6FA'
   },
   paperCardHeader: {
     borderRadius: 0, 

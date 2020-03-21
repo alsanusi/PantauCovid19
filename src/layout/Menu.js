@@ -11,6 +11,7 @@ const useStyles = makeStyles(theme => ({
       flexGrow: 1,
       borderRadius: 0, 
       boxShadow: "none",
+      backgroundColor: "#4880FF",
     },
   }));
 
@@ -33,10 +34,9 @@ function CenteredTabs({location, match, history, ...props}) {
         value={value}
         onChange={handleChange}
         indicatorColor="primary"
-        textColor="primary"
         centered
       >
-            <Tab label="Dashboard" value="/"/>
+            <Tab label="Dashboard" value="/" />
             {/* <Tab label="Travel Band" value="/"/> */}
       </Tabs>
     </Paper>

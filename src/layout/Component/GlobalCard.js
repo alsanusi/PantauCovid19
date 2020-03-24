@@ -14,6 +14,7 @@ const basicStyles = makeStyles(theme => ({
     backgroundColor: '#F5F6FA',
   },
   paperCard: {
+    paddingTop: theme.spacing(2),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
     borderRadius: 0, 
@@ -24,6 +25,10 @@ const basicStyles = makeStyles(theme => ({
     borderRadius: 0, 
     boxShadow: "none",
   },
+  typography: {
+    fontWeight: "bold", 
+    textAlign: "left"
+  }
 }));
 
 const cardStyles = makeStyles({
@@ -31,16 +36,8 @@ const cardStyles = makeStyles({
     maxWidth: 400,
     borderTop: `4px solid`
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
   title: {
     textAlign: "left",
-  },
-  pos: {
-    marginBottom: 12,
   },
 });
 
@@ -99,10 +96,10 @@ export default function Dashboard() {
 
   return (
     <div className={classes.root}>
-     <Grid container direction="column" justify="center" >
+     <Grid container direction="column" justify="space-between">
         <Grid item md xs={12}>
-          <Paper className={classes.paperCard}>
-           <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>
+          <Paper className={classes.paperCard} style={{marginBottom: '20px'}}>
+           <Typography variant="subtitle1" className={classes.typography}>
               {"Current Global Status."}
             </Typography>
             <br/>

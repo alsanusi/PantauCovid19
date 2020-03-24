@@ -9,11 +9,16 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import CoronaApi from '../../api/CoronaApi';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   table: {
     minWidth: 650,
   },
-});
+  padding: {
+    paddingTop: theme.spacing(2),
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
+  }
+}));
 
 export default function SimpleTable() {
   const classes = useStyles();
@@ -42,7 +47,7 @@ export default function SimpleTable() {
   },[classes])
 
   return (
-    <div>
+    <div className={classes.padding}>
     <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>
         {"Current Indonesia Status."}
     </Typography>

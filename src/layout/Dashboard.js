@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Paper } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Menu from './Menu';
 import IndonesiaTableData from './Component/IndonesiaTable';
@@ -19,12 +19,6 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-  },
-  paperLeft: {
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    borderRadius: 0, 
-    boxShadow: "none"
   },
   // footer: {
   //   position: 'fixed',
@@ -61,9 +55,7 @@ export default function CenteredGrid() {
           <Header/>
         </Grid>
         <Grid item md={4} xs={12}>
-          <Paper className={classes.paperLeft}>
             <GlobalData/>
-          </Paper>
         </Grid>
         <Grid item md={7} xs={12}>
           <IndonesiaTableData/>

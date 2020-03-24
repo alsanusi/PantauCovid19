@@ -99,7 +99,7 @@ export default function Dashboard() {
 
   return (
     <div className={classes.root}>
-     <Grid container direction="column" justify="center" spacing={2}>
+     <Grid container direction="column" justify="center" >
         <Grid item md xs={12}>
           <Paper className={classes.paperCard}>
            <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>

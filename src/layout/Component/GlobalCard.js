@@ -11,7 +11,7 @@ import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 const basicStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: '#F5F6FA'
+    backgroundColor: '#F5F6FA',
   },
   paperCard: {
     paddingLeft: theme.spacing(2),
@@ -28,11 +28,8 @@ const basicStyles = makeStyles(theme => ({
 
 const cardStyles = makeStyles({
   root: {
-    minWidth: 275,
+    maxWidth: 400,
     borderTop: `4px solid`
-  },
-  otherRoot: {
-    minWidth: 275,
   },
   bullet: {
     display: 'inline-block',
@@ -102,24 +99,24 @@ export default function Dashboard() {
 
   return (
     <div className={classes.root}>
-     <Grid container direction="column" justify="center" spacing={3}>
+     <Grid container direction="column" justify="center" spacing={2}>
         <Grid item md xs={12}>
           <Paper className={classes.paperCard}>
            <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>
               {"Current Global Status."}
             </Typography>
             <br/>
-            <CardDetail img={<PeopleAltIcon style={{fontSize: 45}}/>} value={globalData.confirmed.toLocaleString()} description={"Total Confirmed Cases."} />
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 45}}/>} value={globalData.confirmed ? globalData.confirmed.toLocaleString() : 0} description={"Total Confirmed Cases."} />
           </Paper>
         </Grid>
         <Grid item md xs={12}>
           <Paper className={classes.paperCard}>
-            <CardDetail img={<FavoriteIcon style={{fontSize: 45}}/>} value={globalData.recovered.toLocaleString()} description={"Total People Recovered."} />
+            <CardDetail img={<FavoriteIcon style={{fontSize: 45}}/>} value={globalData.recovered ? globalData.recovered.toLocaleString() : 0} description={"Total People Recovered."} />
           </Paper>
         </Grid>
         <Grid item md xs={12}>
-        <Paper className={classes.paperCard}>
-            <CardDetail img={<NotInterestedIcon style={{fontSize: 45}}/>} value={globalData.deaths.toLocaleString()} description={"Total People Death."} />
+          <Paper className={classes.paperCard}>
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 45}}/>} value={globalData.deaths ? globalData.deaths.toLocaleString() : 0} description={"Total People Death."} />
           </Paper>
         </Grid>
       </Grid>

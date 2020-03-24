@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#F5F6FA'
   },
   padding: {
-    paddingBottom: theme.spacing(2),
+    paddingBottom: theme.spacing(1),
   },
   paper: {
     padding: theme.spacing(2),
@@ -53,7 +53,7 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container justify="center" spacing={3} className={classes.padding}>
+      <Grid container justify="center" className={classes.padding}>
         <Grid item md={12} xs={12}>
           <Menu/>
           <Header/>

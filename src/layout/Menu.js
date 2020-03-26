@@ -36,7 +36,8 @@ function CenteredTabs({location, match, history, ...props}) {
         indicatorColor="primary"
         centered
       >
-            <Tab label="Dashboard" value="/" />
+            <Tab label="Global Dashboard" value="/" />
+            {/* <Tab label="Indonesia Dashboard" value="/" /> */}
             {/* <Tab label="Travel Band" value="/"/> */}
       </Tabs>
     </Paper>

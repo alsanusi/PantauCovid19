@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     borderTop: `4px solid #4880FF`
   },
   padding: {
-    paddingTop: theme.spacing(3),
+    paddingTop: theme.spacing(2),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
   }
@@ -45,7 +45,7 @@ export default function SimpleTable() {
   return (
     <div className={classes.padding}>
     <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>
-        {"Current Top 3 Country Status."}
+        {"Current Top 5 Country Status."}
     </Typography>
     <br/>
     <TableContainer component={Paper}>
@@ -59,7 +59,7 @@ export default function SimpleTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {topListCountryData.slice(0, 3).map(row => (
+          {topListCountryData.slice(0, 5).map(row => (
             <TableRow key={row.countryCode}>
               <TableCell component="th" scope="row" style={{fontWeight: "bold"}}>
                 {row.countryName}

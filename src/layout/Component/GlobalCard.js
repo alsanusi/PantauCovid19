@@ -11,7 +11,6 @@ import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 const basicStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: '#F5F6FA',
   },
   paperCard: {
     paddingTop: theme.spacing(2),

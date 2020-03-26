@@ -12,6 +12,7 @@ import CoronaApi from '../../api/CoronaApi';
 const useStyles = makeStyles(theme => ({
   table: {
     minWidth: 650,
+    borderTop: `4px solid #4880FF`
   },
   padding: {
     paddingTop: theme.spacing(3),

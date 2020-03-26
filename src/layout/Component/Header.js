@@ -10,6 +10,7 @@ import Moment from 'moment';
 const basicStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    paddingTop: theme.spacing(2),
   },
   paperCardHeader: {
     color: theme.palette.text.secondary,
@@ -45,15 +46,15 @@ function CardTitle({ ...props }) {
     <Card className={classes.otherRoot} style={{ boxShadow: 'none', }}>
       <CardContent>
         <div style={{display: "flex"}}>
-          <div style={{width: "30%", alignSelf: "center"}}>
+          <div style={{width: "10%", alignSelf: "center"}}>
               <Animation json={require("../../assets/lottie/loading.json")}/>
           </div>
-          <div style={{width: "70%", alignSelf: "center", textAlign: "left"}}>
+          <div style={{width: "90%", alignSelf: "center", textAlign: "left"}}>
               <Typography variant="subtitle1">
                 {"Welcome,"}
               </Typography>
               <Typography variant="h4" component="h2" style={{fontWeight: "bold", marginTop: "10px"}}>
-                {"HI, PEEPS!"}
+                {"STAY SAFE EVERYONE!"}
               </Typography>
               <Typography variant="body2" component="p">
                 {props.date}
@@ -92,7 +93,7 @@ export default function Dashboard() {
   return (
     <div className={classes.root}>
      <Grid container direction="column" justify="center">
-        <Grid item md={3} xs={12}>
+        <Grid item md xs={12}>
           <Paper className={classes.paperCardHeader}>
             <CardTitle date={filterDate(globalData.dateAsOf)} />
           </Paper>

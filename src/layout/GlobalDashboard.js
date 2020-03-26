@@ -2,8 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Menu from './Menu';
-import TopListCountryTableData from './Component/TopListCountryTable';
-import GlobalData from './Component/GlobalCard';
+import TopListCountryTableData from './GlobalComponent/TopListCountryTable';
+import GlobalData from './GlobalComponent/GlobalCard';
 import Header from './Component/Header';
 
 const useStyles = makeStyles(theme => ({

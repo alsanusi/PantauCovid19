@@ -20,6 +20,12 @@ class CoronaApi extends BaseApi {
         return api;
     }
 
+    static getIndonesiaSummaryData() {
+        const api = new BaseApi();
+        api.call(api.https().get(`https://api.kawalcorona.com/indonesia`));
+        return api;
+    }
+
 }
 
 export default CoronaApi;

@@ -2,14 +2,13 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Menu from './Menu';
-import IndonesiaTableData from './Component/IndonesiaTable';
-import GlobalData from './Component/GlobalCard';
+import IndonesiaTableData from './IndonesiaComponent/IndonesiaTable';
+import IndonesiaSummaryData from './IndonesiaComponent/IndonesiaCard';
 import Header from './Component/Header';
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    // backgroundColor: '#F5F6FA'
   },
   padding: {
     paddingBottom: theme.spacing(1),
@@ -54,7 +53,7 @@ export default function CenteredGrid() {
           <Header/>
         </Grid>
         <Grid item md={4} xs={12}>
-            <GlobalData/>
+            <IndonesiaSummaryData/>
         </Grid>
         <Grid item md={7} xs={12}>
           <IndonesiaTableData/>

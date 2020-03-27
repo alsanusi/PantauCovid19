@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import Menu from './Menu';
+import Menu from './Component/Menu';
 import TopListCountryTableData from './GlobalComponent/TopListCountryTable';
 import GlobalData from './GlobalComponent/GlobalCard';
 import Header from './Component/Header';
@@ -9,7 +9,6 @@ import Header from './Component/Header';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    // backgroundColor: '#F5F6FA'
   },
   padding: {
     paddingBottom: theme.spacing(1),

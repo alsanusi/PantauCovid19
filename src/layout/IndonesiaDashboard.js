@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import Menu from './Menu';
-import IndonesiaTableData from './IndonesiaComponent/IndonesiaTable';
+import Menu from './Component/Menu';
+import IndonesiaTable from './IndonesiaComponent/IndonesiaTable';
 import IndonesiaSummaryData from './IndonesiaComponent/IndonesiaCard';
 import Header from './Component/Header';
 
@@ -56,7 +56,7 @@ export default function CenteredGrid() {
             <IndonesiaSummaryData/>
         </Grid>
         <Grid item md={7} xs={12}>
-          <IndonesiaTableData/>
+          <IndonesiaTable/>
         </Grid>
         <Grid item md={12} xs={12}>
           <Footer/>

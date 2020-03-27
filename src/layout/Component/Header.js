@@ -93,7 +93,7 @@ export default function Dashboard() {
   return (
     <div className={classes.root}>
      <Grid container direction="column" justify="center">
-        <Grid item md xs={12}>
+        <Grid item md xs>
           <Paper className={classes.paperCardHeader}>
             <CardTitle date={filterDate(globalData.dateAsOf)} />
           </Paper>

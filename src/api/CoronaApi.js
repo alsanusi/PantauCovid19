@@ -2,9 +2,9 @@ import BaseApi from './BaseApi';
 
 class CoronaApi extends BaseApi {
 
-    static getIndonesianData() {
+    static getIndonesianProvinceData() {
         const api = new BaseApi();
-        api.call(api.https().get(`http://api.coronatracker.com/v2/analytics/country`));
+        api.call(api.https().get(`https://api.kawalcorona.com/indonesia/provinsi`));
         return api;
     }
 

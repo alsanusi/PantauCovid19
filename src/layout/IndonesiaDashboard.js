@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { makeStyles } from '@material-ui/core';
 import { Grid } from '@material-ui/core/';
 import Menu from './Component/Menu';
-import IndonesiaTable from './IndonesiaComponent/IndonesiaTable';
-import IndonesiaSummaryData from './IndonesiaComponent/IndonesiaCard';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
+import Loading from './Component/Loading';
+
+const IndonesiaTable = lazy(() => import('./IndonesiaComponent/IndonesiaTable'));
+const IndonesiaSummaryData = lazy(() => import('./IndonesiaComponent/IndonesiaCard'));
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,6 +28,7 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
+      <Suspense fallback={<Loading/>}>
       <Grid container justify="center" className={classes.padding}>
         <Grid item md={12} xs={12}>
           <Menu/>
@@ -41,6 +44,7 @@ export default function CenteredGrid() {
           <Footer/>
         </Grid>
       </Grid>
+      </Suspense>
     </div>
   );
 }

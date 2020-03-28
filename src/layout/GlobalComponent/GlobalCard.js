@@ -67,7 +67,6 @@ function CardDetail({ color, ...props }) {
 }
 
 export default function Dashboard() {
-  const classes = basicStyles();
   const [globalData, setGlobalData] = useState({
     confirmed: '',
     deaths: '',
@@ -89,12 +88,12 @@ export default function Dashboard() {
           })
       }
     })
-  },[classes])
+  },[globalData.created])
 
   return (
-    <div className={classes.root}>
+    <div>
      <Grid container direction="column" justify="space-between" style={{paddingTop: '16px', paddingLeft: '16px', paddingRight: '16px'}}>
-        <Grid item md xs={12} style={{marginBottom: '20px'}}>
+        <Grid item md xs={12} style={{marginBottom: globalData.confirmed > 100000 ? '20px' : '0px'}}>
            <Typography variant="subtitle1" style={{fontWeight: 'bold'}}>
               {"Current Global Status."}
             </Typography>

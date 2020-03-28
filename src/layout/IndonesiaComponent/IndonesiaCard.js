@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+import { makeStyles, useTheme } from '@material-ui/styles';
 import Grid from '@material-ui/core/Grid';
 import { Card, CardContent, Typography } from '@material-ui/core';
 import CoronaApi from '../../api/CoronaApi';
@@ -8,44 +7,43 @@ import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 
-const basicStyles = makeStyles(theme => ({
+const basicStyles = theme => ({
   root: {
     flexGrow: 1,
+    paddingLeft: '50%'
   },
   paperCard: {
-    paddingTop: theme.spacing(2),
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2),
     borderRadius: 0, 
-    boxShadow: "none",
-    backgroundColor: '#F5F6FA'
+    maxWidth: 400,
+    borderTop: `4px solid`,
   },
   paperCardHeader: {
     borderRadius: 0, 
     boxShadow: "none",
   },
-  typography: {
+  header: {
     fontWeight: "bold", 
     textAlign: "left"
-  }
-}));
-
-const cardStyles = makeStyles({
-  root: {
-    maxWidth: 400,
-    borderTop: `4px solid`
   },
   title: {
     textAlign: "left",
   },
+  basicPadding: {
+    paddingTop: '16px',
+    paddingLeft: '16px',
+    paddingRight: '16px'
+  }
 });
 
-function CardDetail({ ...props }) {
-  const classes = cardStyles();
+function CardDetail({ color, ...props }) {
+  const theme = useTheme();
+  const styles = basicStyles(theme);
+  styles.paperCard.borderTopColor = color;
+  const classes = makeStyles(styles)();
 
   return (
     <div>
-    <Card className={classes.root}>
+    <Card className={classes.paperCard}>
       <CardContent>
         <div style={{display: "flex"}}>
           <div style={{width: "30%", alignSelf: "center"}}>
@@ -69,7 +67,6 @@ function CardDetail({ ...props }) {
 }
 
 export default function Dashboard() {
-  const classes = basicStyles();
   const [indonesiaData, setIndonesiaData] = useState({
     confirmed: '',
     deaths: '',
@@ -89,29 +86,23 @@ export default function Dashboard() {
           })
       }
     })
-  },[classes])
+  },[indonesiaData.confirmed])
 
   return (
-    <div className={classes.root}>
-     <Grid container direction="column" justify="space-between">
-        <Grid item md xs={12}>
-          <Paper className={classes.paperCard} style={{marginBottom: '20px'}}>
-           <Typography variant="subtitle1" className={classes.typography}>
+    <div>
+     <Grid container direction="column" justify="space-between" style={{paddingTop: '16px', paddingLeft: '16px', paddingRight: '16px'}}>
+        <Grid item md xs={12} style={{marginBottom: indonesiaData.confirmed > 100000 ? '20px' : '0px'}}>
+           <Typography variant="subtitle1" style={{fontWeight: 'bold'}}>
               {"Current Indonesia Status."}
             </Typography>
             <br/>
-            <CardDetail img={<PeopleAltIcon style={{fontSize: 45}}/>} value={indonesiaData.confirmed ? indonesiaData.confirmed.toLocaleString() : 0} description={"Total Confirmed Cases."} />
-          </Paper>
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={indonesiaData.confirmed ? indonesiaData.confirmed.toLocaleString() : 0} description={"Total Confirmed Cases."} color={"#E74C3C"} />
         </Grid>
         <Grid item md xs={12}>
-          <Paper className={classes.paperCard}>
-            <CardDetail img={<FavoriteIcon style={{fontSize: 45}}/>} value={indonesiaData.recovered ? indonesiaData.recovered.toLocaleString() : 0} description={"Total People Recovered."} />
-          </Paper>
+            <CardDetail img={<FavoriteIcon style={{fontSize: 45, color: "#28B463"}}/>} value={indonesiaData.recovered ? indonesiaData.recovered.toLocaleString() : 0} description={"Total People Recovered."} color={"#28B463"} />
         </Grid>
         <Grid item md xs={12}>
-          <Paper className={classes.paperCard}>
-            <CardDetail img={<NotInterestedIcon style={{fontSize: 45}}/>} value={indonesiaData.deaths ? indonesiaData.deaths.toLocaleString() : 0} description={"Total People Death."} />
-          </Paper>
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 45, color: "#17202A"}}/>} value={indonesiaData.deaths ? indonesiaData.deaths.toLocaleString() : 0} description={"Total People Death."} color={"#17202A"} />
         </Grid>
       </Grid>
     </div>

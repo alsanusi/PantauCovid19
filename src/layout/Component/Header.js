@@ -10,7 +10,7 @@ import Moment from 'moment';
 const basicStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    paddingTop: theme.spacing(2),
+    paddingTop: theme.spacing(1),
   },
   paperCardHeader: {
     color: theme.palette.text.secondary,

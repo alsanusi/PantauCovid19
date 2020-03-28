@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
+import { Grid, BottomNavigation, BottomNavigationAction } from '@material-ui/core/';
 import Menu from './Component/Menu';
 import IndonesiaTable from './IndonesiaComponent/IndonesiaTable';
 import IndonesiaSummaryData from './IndonesiaComponent/IndonesiaCard';
@@ -18,27 +18,38 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
-  footer: {
-    position: 'fixed',
-    left: '0',
-    bottom: theme.spacing(4),
+}));
+
+const footerStyles = makeStyles( theme => ({
+  root: {
     width: '100%',
-    textAlign: 'center',
-    fontSize: "12px"
+    position: 'fixed',
+    bottom: 0,
+  },
+  label: {
+    fontWeight: 'bold',
+  },
+  selected: {
+    width: "max-content",
   }
 }));
 
 function Footer() {
-  const classes = useStyles();
+  const classes = footerStyles();
+  const [value, setValue] = React.useState(0);
 
-  return(
-    <div className={classes.root}>
-    <Grid container justify="center">
-      <Grid item md={12} xs={12} className={classes.footer}>
-        {"© Muhammad Alkautsar Sanusi."}
-      </Grid>
-    </Grid>
-  </div>
+  return (
+    <BottomNavigation
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
+        window.open("https://muhalkautsarsanusi.com/", "Author")
+      }}
+      showLabels
+      className={classes.root}
+    >
+      <BottomNavigationAction label="© Muhammad Alkautsar Sanusi." classes={{ root: classes.label, selected: classes.selected}}/>
+    </BottomNavigation>
   );
 }
 
@@ -56,7 +67,7 @@ export default function CenteredGrid() {
             <IndonesiaSummaryData/>
         </Grid>
         <Grid item md={7} xs={12}>
-          <IndonesiaTable/>
+            <IndonesiaTable/>
         </Grid>
         <Grid item md={12} xs={12}>
           <Footer/>

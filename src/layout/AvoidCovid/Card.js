@@ -26,13 +26,14 @@ const useStyles = makeStyles(theme => ({
 const cardStyles = makeStyles({
     root: {
       maxWidth: 330,
+      maxHeight: 400
     },
     media: {
       height: 140,
     },
   });
   
-function MediaCard() {
+function MediaCard({ ...props }) {
     const classes = cardStyles();
   
     return (
@@ -44,21 +45,17 @@ function MediaCard() {
             title="Contemplative Reptile"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+            <Typography gutterBottom variant="h5" component="h2" style={{fontWeight: 'bold'}}>
+              {props.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
+              {props.description}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
             Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
           </Button>
         </CardActions>
       </Card>
@@ -71,18 +68,20 @@ export default function FullWidthGrid() {
   return (
     <div className={classes.root}>
       <Grid container justify="center" alignItems="center" spacing={3}>
-        <Grid item xs={12} md={3}>
-            <MediaCard/>
+        <Grid item xs={12} md={12} style={{marginTop: '20px', marginBottom: '20px'}}>
+            <Typography gutterBottom variant="h5" component="h2" style={{textAlign: "center"}}>
+              How to Avoid Covid19 ?
+            </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
-            <MediaCard/>
+            <MediaCard title="Prevent Infection" description="Stay at home and keep your distance with others."/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <MediaCard/>
+            <MediaCard title="Stay Home" description="Wash your hand often, use hand sanitiser and break the face-touching habit."/>
         </Grid>
-        {/* <Grid item xs={12} md={3}>
-            <MediaCard/>
-        </Grid> */}
+        <Grid item xs={12} md={3}>
+            <MediaCard title="Stay Healthy" description="Stay healhty by eating clean food, drink more mineral water and do some in-house sport."/>
+        </Grid>
       </Grid>
     </div>
   );

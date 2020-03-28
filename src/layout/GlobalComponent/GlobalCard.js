@@ -70,7 +70,7 @@ function CardDetail({ color, ...props }) {
 function DataLoading() {
   return (
     <div>
-        <Animation json={require("../../assets/lottie/loading-data.json")} style={{marginRight: 'inherit', height: '60px'}}/>
+        <Animation json={require("../../assets/lottie/loading-data.json")} style={{marginRight: 'inherit', height: '60px'}} autoplay="true"/>
     </div>
   )
 }
@@ -86,15 +86,17 @@ export default function Dashboard() {
   useEffect(() => {
     CoronaApi.getGlobalData().then({
       complete:(response, e) => {
-        if(e) 
+        if(e) {
           console.log(e)
-         else 
+          window.location.reload()
+        } else {
           setGlobalData({
             confirmed: response.data.confirmed,
             deaths: response.data.deaths,
             recovered: response.data.recovered,
             created: response.data.created
           })
+        }
       }
     })
   },[globalData.created])

@@ -59,15 +59,13 @@ export default function StickyHeadTable() {
     let data = {};
     CoronaApi.getIndonesianProvinceData().then({
       complete:(response, e) => {
-        if(e) 
+        if(e) {
           console.log(e)
-         else 
-         if(response) {
+          window.location.reload();
+        } else {
           data = [...response.data];
-          setIndonesianData(data)
-         } else {
-          setIndonesianData([])
-         }
+          data ? setIndonesianData(data) : setIndonesianData([])
+        }
       }
     })
   },[page])

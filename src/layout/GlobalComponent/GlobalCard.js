@@ -70,7 +70,7 @@ function CardDetail({ color, ...props }) {
 function DataLoading() {
   return (
     <div>
-        <Animation json={require("../../assets/lottie/loading-data.json")} style={{marginRight: 'inherit', height: '60px'}}/>
+        <Animation json={require("../../assets/lottie/loading-data.json")} style={{marginRight: 'inherit', height: '60px'}} autoplay="true"/>
     </div>
   )
 }

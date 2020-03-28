@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Animation from '../../components/Animation';
-import Moment from 'moment';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,16 +23,22 @@ const useStyles = makeStyles(theme => ({
 export default function AutoGridNoWrap() {
   const classes = useStyles();
 
-  const filterDate = (date) => {
-    return Moment(date).utc().format('DD MMMM YYYY.')
-  }
+  const formatDate = () => {
+    let selectedDate;
+    selectedDate = new Intl.DateTimeFormat('en-GB', {
+        month: 'long',
+        day: '2-digit',
+        year: 'numeric',
+    }).format(new Date())
+    return selectedDate;
+}
 
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
         <Grid container wrap="nowrap" spacing={2}>
           <Grid item style={{ alignSelf: "center" }}>
-              <Animation json={require("../../assets/lottie/loading.json")}/>
+              <Animation json={require("../../assets/lottie/loading.json")} autoplay="true"/>
           </Grid>
           <Grid item xs>
               <Typography variant="subtitle1">
@@ -43,7 +48,7 @@ export default function AutoGridNoWrap() {
                 {"STAY SAFE EVERYONE!"}
               </Typography>
               <Typography variant="body2" component="p">
-                {filterDate(Date())}
+                {formatDate()}
               </Typography>
           </Grid>
         </Grid>

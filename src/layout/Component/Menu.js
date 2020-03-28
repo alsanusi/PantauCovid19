@@ -13,6 +13,10 @@ const useStyles = makeStyles(theme => ({
       boxShadow: "none",
       backgroundColor: "#4880FF",
     },
+    tab: {
+      fontWeight: 'bold',
+      color: '#fff'
+    }
   }));
 
 function CenteredTabs({location, match, history, ...props}) {
@@ -36,8 +40,8 @@ function CenteredTabs({location, match, history, ...props}) {
         indicatorColor="primary"
         centered
       >
-            <Tab label="Global" value="/" />
-            <Tab label="Indonesia" value="/indonesia" />
+            <Tab label="Global" value="/" className={classes.tab}/>
+            <Tab label="Indonesia" value="/indonesia" className={classes.tab}/>
       </Tabs>
     </Paper>
   );

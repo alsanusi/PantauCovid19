@@ -42,6 +42,8 @@ function CenteredTabs({location, match, history, ...props}) {
       >
             <Tab label="Global" value="/" className={classes.tab}/>
             <Tab label="Indonesia" value="/indonesia" className={classes.tab}/>
+            <Tab label="Avoid Covid" value="/avoid-covid" className={classes.tab}/>
+            {/* <Tab label="Avoid Covid" value="/travel-ban" className={classes.tab}/> */}
       </Tabs>
     </Paper>
   );

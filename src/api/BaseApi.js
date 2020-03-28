@@ -9,9 +9,7 @@ class BaseApi {
 
     // Base Http
     http = axios.create({
-        // headers: {
-        //     'Access-Control-Allow-Origin': '*',
-        // },
+        // headers: {"Access-Control-Allow-Origin": "*"},
         ...this.basicConfigs
     });
 

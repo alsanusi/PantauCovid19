@@ -78,7 +78,7 @@ const headerStyles = makeStyles(theme => ({
 
 const Bold = ({ children }) => <Typography style={{ fontWeight: 'bold', display: 'inline-block' }}>{children}</Typography>
 
-function AutoGridNoWrap() {
+function Header() {
   const classes = headerStyles();
 
   return (
@@ -109,7 +109,7 @@ export default function FullWidthGrid() {
             </Typography>
         </Grid>
         <Grid item xs={12} md={10}>
-          <AutoGridNoWrap/>
+          <Header/>
         </Grid>
         <Grid item xs={12} md={12} style={{marginTop: '20px', marginBottom: '5px'}}>
             <Typography gutterBottom variant="h5" component="h2" style={{textAlign: "center"}}>

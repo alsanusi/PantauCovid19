@@ -99,13 +99,13 @@ export default function Dashboard() {
               {"Current Global Status."}
             </Typography>
             <br/>
-            <CardDetail img={<PeopleAltIcon style={{fontSize: 45}}/>} value={globalData.confirmed ? globalData.confirmed.toLocaleString() : 0} description={"Total Confirmed Cases."} color={"#0F4DB2"} />
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={globalData.confirmed ? globalData.confirmed.toLocaleString() : 0} description={"Total Confirmed Cases."} color={"#E74C3C"} />
         </Grid>
         <Grid item md xs={12}>
-            <CardDetail img={<FavoriteIcon style={{fontSize: 45}}/>} value={globalData.recovered ? globalData.recovered.toLocaleString() : 0} description={"Total People Recovered."} color={"#4A90E2"} />
+            <CardDetail img={<FavoriteIcon style={{fontSize: 45, color: "#28B463"}}/>} value={globalData.recovered ? globalData.recovered.toLocaleString() : 0} description={"Total People Recovered."} color={"#28B463"} />
         </Grid>
         <Grid item md xs={12}>
-            <CardDetail img={<NotInterestedIcon style={{fontSize: 45}}/>} value={globalData.deaths ? globalData.deaths.toLocaleString() : 0} description={"Total People Death."} color={"#0F4DB2"} />
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 45, color: "#17202A"}}/>} value={globalData.deaths ? globalData.deaths.toLocaleString() : 0} description={"Total People Death."} color={"#17202A"} />
         </Grid>
       </Grid>
     </div>

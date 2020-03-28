@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import { Grid } from '@material-ui/core/';
 import Menu from './Component/Menu';
-import AvoidCovid from './AvoidCovid/Card';
+import AvoidCovid from './AboutCovid/Card';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 

@@ -31,7 +31,7 @@ export default function Footer() {
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction label="© Muhammad Alkautsar Sanusi." classes={{ root: classes.label, selected: classes.selected}}/>
+        <BottomNavigationAction label="© Alkautsars." classes={{ root: classes.label, selected: classes.selected}}/>
       </BottomNavigation>
     );
 }

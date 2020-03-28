@@ -59,15 +59,15 @@ export default function StickyHeadTable() {
     let data = {};
     CoronaApi.getTopListData().then({
       complete:(response, e) => {
-        if(e) 
+        if(e) {
           console.log(e)
-         else 
+          window.location.reload();
+        } else {
          if(response) {
             data = [...response.data];
-            setTopListCountryData(data)
-         } else {
-            setTopListCountryData([])
+            data ? setTopListCountryData(data) : setTopListCountryData([])
          }
+        }
       }
     })
   },[page])

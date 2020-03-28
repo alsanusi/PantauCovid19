@@ -85,14 +85,16 @@ export default function Dashboard() {
   useEffect(() => {
     CoronaApi.getIndonesiaSummaryData().then({
       complete:(response, e) => {
-        if(e) 
+        if(e) {
           console.log(e)
-         else 
+          window.location.reload()
+        } else {
           setIndonesiaData({
             confirmed: response.data[0].positif,
             deaths: response.data[0].meninggal,
             recovered: response.data[0].sembuh,
           })
+        }
       }
     })
   },[indonesiaData.confirmed])

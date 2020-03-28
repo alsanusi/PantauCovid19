@@ -1,55 +1,41 @@
-import React, {useEffect, useState} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
 import Paper from '@material-ui/core/Paper';
+import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Card, CardContent, Typography } from '@material-ui/core';
-import CoronaApi from '../../api/CoronaApi';
+import Typography from '@material-ui/core/Typography';
 import Animation from '../../components/Animation';
 import Moment from 'moment';
 
-const basicStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    paddingTop: theme.spacing(1),
+    overflow: 'hidden',
+    paddingTop: theme.spacing(2),
   },
-  paperCardHeader: {
-    color: theme.palette.text.secondary,
+  paper: {
+    margin: `${theme.spacing(1)}px auto`,
+    padding: theme.spacing(1),
     borderRadius: 0, 
     boxShadow: "none",
+    backgroundColor: '#F5F6FA'
   },
 }));
 
-const cardStyles = makeStyles({
-  root: {
-    minWidth: 275,
-    borderTop: `4px solid`
-  },
-  otherRoot: {
-    minWidth: 275,
-    backgroundColor: '#F5F6FA'
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    textAlign: "left",
-  },
-});
+export default function AutoGridNoWrap() {
+  const classes = useStyles();
 
-function CardTitle({ ...props }) {
-  const classes = cardStyles();
+  const filterDate = (date) => {
+    return Moment(date).utc().format('DD MMMM YYYY.')
+  }
 
   return (
-    <div>
-    <Card className={classes.otherRoot} style={{ boxShadow: 'none', }}>
-      <CardContent>
-        <div style={{display: "flex"}}>
-          <div style={{width: "10%", alignSelf: "center"}}>
+    <div className={classes.root}>
+      <Paper className={classes.paper}>
+        <Grid container wrap="nowrap" spacing={2}>
+          <Grid item style={{ alignSelf: "center" }}>
               <Animation json={require("../../assets/lottie/loading.json")}/>
-          </div>
-          <div style={{width: "90%", alignSelf: "center", textAlign: "left"}}>
+          </Grid>
+          <Grid item xs>
               <Typography variant="subtitle1">
                 {"Welcome,"}
               </Typography>
@@ -57,48 +43,11 @@ function CardTitle({ ...props }) {
                 {"STAY SAFE EVERYONE!"}
               </Typography>
               <Typography variant="body2" component="p">
-                {props.date}
+                {filterDate(Date())}
               </Typography>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
-    </div>
-  );
-}
-
-export default function Dashboard() {
-  const classes = basicStyles();
-  const [globalData, setGlobalData] = useState({
-    created: ''
-  });
-
-  useEffect(() => {
-    CoronaApi.getGlobalData().then({
-      complete:(response, e) => {
-        if(e) 
-          console.log(e)
-         else 
-          setGlobalData({
-            created: response.data.created
-          })
-      }
-    })
-  },[classes])
-
-  const filterDate = (date) => {
-    return Moment(date).utc().format('DD MMMM YYYY - h:mm:ss a.')
-  }
-
-  return (
-    <div className={classes.root}>
-     <Grid container direction="column" justify="center">
-        <Grid item md xs>
-          <Paper className={classes.paperCardHeader}>
-            <CardTitle date={filterDate(globalData.dateAsOf)} />
-          </Paper>
+          </Grid>
         </Grid>
-      </Grid>
+      </Paper>
     </div>
   );
 }

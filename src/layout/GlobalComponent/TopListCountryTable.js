@@ -70,7 +70,7 @@ export default function StickyHeadTable() {
          }
       }
     })
-  },[classes])
+  },[page])
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);

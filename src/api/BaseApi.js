@@ -2,6 +2,7 @@ import axios from 'axios';
 import { cacheAdapterEnhancer, throttleAdapterEnhancer } from 'axios-extensions';
 
 class BaseApi {
+    requests = [];
 
     basicConfigs = {
         adapter: throttleAdapterEnhancer(cacheAdapterEnhancer(axios.defaults.adapter)),
@@ -9,7 +10,11 @@ class BaseApi {
 
     // Base Http
     http = axios.create({
-        // headers: {"Access-Control-Allow-Origin": "*"},
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': '*',
+            'Access-Control-Allow-Methods': '*',
+        },
         ...this.basicConfigs
     });
 
@@ -18,7 +23,6 @@ class BaseApi {
     }
 
     // Request
-    requests = [];
     request() {
         return this.requests[0];
     }

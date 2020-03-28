@@ -6,6 +6,7 @@ import CoronaApi from '../../api/CoronaApi';
 import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+import Animation from '../../components/Animation';
 
 const basicStyles = theme => ({
   root: {
@@ -66,6 +67,14 @@ function CardDetail({ color, ...props }) {
   );
 }
 
+function DataLoading() {
+  return (
+    <div>
+        <Animation json={require("../../assets/lottie/loading-data.json")} style={{marginRight: 'inherit', height: '60px'}}/>
+    </div>
+  )
+}
+
 export default function Dashboard() {
   const [indonesiaData, setIndonesiaData] = useState({
     confirmed: '',
@@ -96,13 +105,13 @@ export default function Dashboard() {
               {"Current Indonesia Status."}
             </Typography>
             <br/>
-            <CardDetail img={<PeopleAltIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={indonesiaData.confirmed ? indonesiaData.confirmed.toLocaleString() : 0} description={"Total Confirmed Cases."} color={"#E74C3C"} />
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={indonesiaData.confirmed ? indonesiaData.confirmed.toLocaleString() : <DataLoading/>} description={"Total Confirmed Cases."} color={"#E74C3C"} />
         </Grid>
         <Grid item md xs={12}>
-            <CardDetail img={<FavoriteIcon style={{fontSize: 45, color: "#28B463"}}/>} value={indonesiaData.recovered ? indonesiaData.recovered.toLocaleString() : 0} description={"Total People Recovered."} color={"#28B463"} />
+            <CardDetail img={<FavoriteIcon style={{fontSize: 45, color: "#28B463"}}/>} value={indonesiaData.recovered ? indonesiaData.recovered.toLocaleString() : <DataLoading/>} description={"Total People Recovered."} color={"#28B463"} />
         </Grid>
         <Grid item md xs={12}>
-            <CardDetail img={<NotInterestedIcon style={{fontSize: 45, color: "#17202A"}}/>} value={indonesiaData.deaths ? indonesiaData.deaths.toLocaleString() : 0} description={"Total People Death."} color={"#17202A"} />
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 45, color: "#17202A"}}/>} value={indonesiaData.deaths ? indonesiaData.deaths.toLocaleString() : <DataLoading/>} description={"Total People Death."} color={"#17202A"} />
         </Grid>
       </Grid>
     </div>

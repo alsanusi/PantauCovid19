@@ -32,7 +32,7 @@ export default function CenteredGrid() {
           <Header/>
         </Grid>
         <Grid item md={4} xs={12}>
-            <GlobalData/>
+          <GlobalData/>
         </Grid>
         <Grid item md={7} xs={12}>
           <TopListCountryTableData/>

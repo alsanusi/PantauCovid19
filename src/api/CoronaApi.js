@@ -4,25 +4,25 @@ class CoronaApi extends BaseApi {
 
     static getIndonesianProvinceData() {
         const api = new BaseApi();
-        api.call(api.https().get(`https://api.kawalcorona.com/indonesia/provinsi`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/https://api.kawalcorona.com/indonesia/provinsi`));
         return api;
     }
 
     static getGlobalData() {
         const api = new BaseApi();
-        api.call(api.https().get(`http://api.coronatracker.com/v2/stats`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v2/stats`));
         return api;
     }
 
     static getTopListData() {
         const api = new BaseApi();
-        api.call(api.https().get(`http://api.coronatracker.com/v2/stats/top`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v2/stats/top`));
         return api;
     }
 
     static getIndonesiaSummaryData() {
         const api = new BaseApi();
-        api.call(api.https().get(`https://api.kawalcorona.com/indonesia`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/https://api.kawalcorona.com/indonesia`));
         return api;
     }
 

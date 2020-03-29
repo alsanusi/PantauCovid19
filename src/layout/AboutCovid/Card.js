@@ -34,7 +34,7 @@ const cardStyles = makeStyles({
     },
 });
   
-function MediaCard({ ...props }) {
+function AvoidCard({ ...props }) {
     const classes = cardStyles();
   
     return (
@@ -49,13 +49,32 @@ function MediaCard({ ...props }) {
             <Typography gutterBottom variant="h5" component="h2" style={{fontWeight: 'bold'}}>
               {props.title}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p" style={{textAlign: 'justify'}}>
+            <Typography variant="body2" component="p" style={{textAlign: 'justify'}}>
               {props.description}
             </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
     );
+}
+
+function SymptomsCard({ ...props }) {
+  const classes = cardStyles();
+
+  return (
+    <Card className={classes.root} style={{boxShadow: "none", backgroundColor: "#F5F6FA"}}>
+      <CardActionArea>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2" style={{fontWeight: 'bold'}}>
+            {props.title}
+          </Typography>
+          <Typography variant="body2" component="p" style={{textAlign: 'justify'}}>
+            {props.description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  );
 }
 
 const headerStyles = makeStyles(theme => ({
@@ -117,13 +136,13 @@ export default function FullWidthGrid() {
             </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
-            <MediaCard title="Fever" img={require("../../assets/img/fever.jpg")} description="One of the most popular COVID19 symptoms is fever, which the body temperature is 38°C or higher"/>
+            <SymptomsCard title="Fever" description="One of the most popular COVID19 symptoms is fever, which the body temperature is 38°C or higher"/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <MediaCard title="Shortness of breath" img={require("../../assets/img/cough.jpg")} description="Beside fever, Shortness of breath is also one of the most popular COVID19 symptoms, which will bring pain in your chest."/>
+            <SymptomsCard title="Shortness of breath" description="Beside fever, Shortness of breath is also one of the most popular COVID19 symptoms, which will bring pain in your chest."/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <MediaCard title="Sore throat" img={require("../../assets/img/shore.jpg")} description="Having sore throat is also one of the COVID19 symptoms. Besides that, having dry cough and tiredness also include as COVID19 symptoms."/>
+            <SymptomsCard title="Sore throat" description="Having sore throat is also one of the COVID19 symptoms. Besides that, having dry cough and tiredness also include as COVID19 symptoms."/>
         </Grid>
         <Grid item xs={12} md={12} style={{marginTop: '20px', marginBottom: '5px'}}>
             <Typography gutterBottom variant="h5" component="h2" style={{textAlign: "center"}}>
@@ -131,13 +150,13 @@ export default function FullWidthGrid() {
             </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
-            <MediaCard title="Stay Home" img={require("../../assets/img/stayHome.jpg")} description="Stop traveling and hang out, just stay at home and keep your distance with others."/>
+            <AvoidCard title="Stay Home" img={require("../../assets/img/stayHome.jpg")} description="Stop traveling and hang out, just stay at home and keep your distance with others."/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <MediaCard title="Prevent Infection" img={require("../../assets/img/washHand.jpg")} description="Wash your hand often, use hand sanitiser and break the face-touching habit."/>
+            <AvoidCard title="Prevent Infection" img={require("../../assets/img/washHand.jpg")} description="Wash your hand often, use hand sanitiser and break the face-touching habit."/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <MediaCard title="Stay Healthy" img={require("../../assets/img/jogging.jpg")} description="Stay healhty by eating clean food, drink more mineral water and do some in-house sport."/>
+            <AvoidCard title="Stay Healthy" img={require("../../assets/img/jogging.jpg")} description="Stay healhty by eating clean food, drink more mineral water and do some in-house sport."/>
         </Grid>
       </Grid>
     </div>

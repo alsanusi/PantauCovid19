@@ -53,8 +53,6 @@ export default function Example() {
           }
         })
       },[indonesianData.Confirmed])
-
-      console.log(indonesianData)
     
     return (
     <div className={classes.padding}>
@@ -70,8 +68,8 @@ export default function Example() {
             }}
         >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="Date" />
-            <YAxis />
+            <XAxis tick={{fontSize: 14, fontWeight: 'bold'}} dataKey="Date"/>
+            <YAxis tick={{fontSize: 13}}/>
             <Tooltip />
             <Legend verticalAlign="top" height={40}/>
             <Line type="monotone" dataKey="Confirmed" stroke="#E74C3C" strokeWidth={3} activeDot={{ r: 8 }} />

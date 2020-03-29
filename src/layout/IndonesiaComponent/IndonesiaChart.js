@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import CoronaApi from '../../api/CoronaApi';
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
+import moment from 'moment';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -21,45 +23,59 @@ const useStyles = makeStyles(theme => ({
     }
   }));
 
-const data = [
-  {
-    name: 'DKI Jakarta', confirmed: 500, recovered: 200, death: 10
-  },
-  {
-    name: 'Sulawesi Selatan', confirmed: 500, recovered: 300, death: 5
-  },
-  {
-    name: 'Kalimantan', confirmed: 800, recovered: 500, death: 0
-  },
-];
-
 export default function Example() {
     const classes = useStyles();
+    const [indonesianData, setIndonesianData] = useState([]);
+
+    const todayDate = () => {
+        let selectedDate;
+        selectedDate = new Intl.DateTimeFormat('fr-CA').format(new Date());
+        return selectedDate;
+    }
+
+    const restructureData = (responseData) => {
+        let filteredData;
+        filteredData = responseData.map(x => ({ 'Confirmed': x.total_confirmed, 'Date': moment(x.last_updated).format("MMMM D")}));
+        return filteredData
+    }
+
+    useEffect(() => {
+        let data = {};
+        CoronaApi.getDailyIndonesiaData("ID", "2020-03-01", todayDate()).then({
+          complete:(response, e) => {
+            if(e) {
+              console.log(e)
+              window.location.reload();
+            } else {
+              data = [...response.data];
+              data ? setIndonesianData(restructureData(data)) : setIndonesianData([])
+            }
+          }
+        })
+      },[indonesianData.Confirmed])
+
+      console.log(indonesianData)
     
     return (
     <div className={classes.padding}>
-        <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>
-            {"Current Indonesia Status Based on Province."}
+        <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "center"}}>
+            {"Indonesia COVID19 Confirmed Statistic."}
         </Typography>
         <br/>
         <ResponsiveContainer height={300}>
-        <BarChart
-            width={500}
-            height={300}
-            data={data}
+        <LineChart
+            data={indonesianData}
             margin={{
-            top: 20, right: 30, left: 20, bottom: 5,
+            top: 5, right: 30, left: 20, bottom: 5,
             }}
         >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
+            <XAxis dataKey="Date" />
             <YAxis />
             <Tooltip />
-            <Legend />
-            <Bar dataKey="confirmed" stackId="a" fill="#8884d8" />
-            <Bar dataKey="recovered" stackId="a" fill="#82ca9d" />
-            <Bar dataKey="death" fill="#ffc658" />
-        </BarChart>
+            <Legend verticalAlign="top" height={40}/>
+            <Line type="monotone" dataKey="Confirmed" stroke="#E74C3C" strokeWidth={3} activeDot={{ r: 8 }} />
+        </LineChart>
         </ResponsiveContainer>
     </div>
     );

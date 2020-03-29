@@ -6,7 +6,7 @@ import Header from './Component/Header';
 import Footer from './Component/Footer';
 import Loading from './Component/Loading';
 
-const TopListCountryTableData = lazy(() => import('./GlobalComponent/TopListCountryTable'));
+const TopListCountryTableData = lazy(() => import('./GlobalComponent/GlobalTable'));
 const GlobalData = lazy(() => import('./GlobalComponent/GlobalCard'));
 
 const useStyles = makeStyles(theme => ({

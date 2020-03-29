@@ -26,6 +26,12 @@ class CoronaApi extends BaseApi {
         return api;
     }
 
+    static getDailyIndonesiaData(countryCode, startDate, endDate) {
+        const api = new BaseApi();
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v3/analytics/trend/country?countryCode=${countryCode}&startDate=${startDate}&endDate=${endDate}`));
+        return api;
+    }
+
 }
 
 export default CoronaApi;

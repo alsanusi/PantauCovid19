@@ -5,6 +5,7 @@ import Menu from './Component/Menu';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 import Loading from './Component/Loading';
+import IndonesiaChart from './IndonesiaComponent/IndonesiaChart';
 
 const IndonesiaTable = lazy(() => import('./IndonesiaComponent/IndonesiaTable'));
 const IndonesiaSummaryData = lazy(() => import('./IndonesiaComponent/IndonesiaCard'));
@@ -35,10 +36,13 @@ export default function CenteredGrid() {
           <Header/>
         </Grid>
         <Grid item md={4} xs={12}>
-            <IndonesiaSummaryData/>
+          <IndonesiaSummaryData/>
         </Grid>
         <Grid item md={7} xs={12}>
-            <IndonesiaTable/>
+          <IndonesiaTable/>
+        </Grid>
+        <Grid item md={12} xs={12}>
+          <IndonesiaChart/>
         </Grid>
         <Grid item md={12} xs={12}>
           <Footer/>

@@ -9,8 +9,8 @@ function App() {
   return (
       <Router>
         <Switch>
-          <Route exact path="/" component={GlobalDashboard}></Route>
-          <Route path="/indonesia" component={IndonesiaDashboard}></Route>
+          <Route exact path="/" component={IndonesiaDashboard}></Route>
+          <Route path="/global" component={GlobalDashboard}></Route>
           <Route path="/about-covid" component={AboutCovid}></Route>
         </Switch>
       </Router>

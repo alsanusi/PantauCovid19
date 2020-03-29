@@ -5,10 +5,10 @@ import Menu from './Component/Menu';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 import Loading from './Component/Loading';
-import IndonesiaChart from './IndonesiaComponent/IndonesiaChart';
 
 const IndonesiaTable = lazy(() => import('./IndonesiaComponent/IndonesiaTable'));
 const IndonesiaSummaryData = lazy(() => import('./IndonesiaComponent/IndonesiaCard'));
+const IndonesiaChart = lazy(() => import('./IndonesiaComponent/IndonesiaChart'));
 
 const useStyles = makeStyles(theme => ({
   root: {

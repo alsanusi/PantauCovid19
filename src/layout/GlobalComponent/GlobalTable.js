@@ -15,51 +15,47 @@ const useStyles = makeStyles(theme => ({
 
 export default function MaterialTableDemo() {
   const classes = useStyles();
-  const [indonesianData, setIndonesianData] = useState([]);
+  const [topListCountryData, setTopListCountryData] = useState([]);
 
   const columns = [
-    { title: 'Province', field: 'province',
+    { title: 'Country Name', field: 'countryName',
       cellStyle: {
         fontWeight: 'bold',
         color: '#039be5'
       }},
     { title: 'Confirmed', field: 'confirmed', type: 'numeric' },
     { title: 'Recovered', field: 'recovered', type: 'numeric' },
-    { title: 'Death', field: 'death', type: 'numeric' },
+    { title: 'Death', field: 'deaths', type: 'numeric' },
   ]
-
-  const restructureData = (responseData) => {
-    let filteredData;
-    filteredData = responseData.map(x => ({ 'province': x.attributes.Provinsi, 'confirmed': x.attributes.Kasus_Posi, 'recovered': x.attributes.Kasus_Semb, 'death': x.attributes.Kasus_Meni}));
-    return filteredData
-    }
 
   useEffect(() => {
     let data = {};
-    CoronaApi.getIndonesianProvinceData().then({
+    CoronaApi.getAllCountryData().then({
       complete:(response, e) => {
         if(e) {
           console.log(e)
           window.location.reload();
         } else {
-          data = [...response.data];
-          data ? setIndonesianData(restructureData(data)) : setIndonesianData([])
+         if(response) {
+            data = [...response.data];
+            data ? setTopListCountryData(data) : setTopListCountryData([])
+         }
         }
       }
     })
-  },[indonesianData.province])
+  },[topListCountryData.countryName])
 
   return (
     <div className={classes.padding}>
     <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>
-        {"Current Indonesia Status Based on Province."}
+        {"Current Country Status."}
     </Typography>
     <br/>
     <MaterialTable
       style={{borderTop: `4px solid #01579b`}}
-      title={"Find your Province"}
+      title={"Find your Country"}
       columns={columns}
-      data={indonesianData}
+      data={topListCountryData}
       options={{
         headerStyle: {
           backgroundColor: '#01579b',

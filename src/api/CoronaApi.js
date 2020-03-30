@@ -28,7 +28,7 @@ class CoronaApi extends BaseApi {
 
     static getIndonesiaSummaryData() {
         const api = new BaseApi();
-        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/https://api.kawalcorona.com/indonesia`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v3/stats/worldometer/country?countryCode=ID`));
         return api;
     }
 

@@ -21,7 +21,6 @@ export default function MaterialTableDemo() {
     { title: 'Province', field: 'province',
       cellStyle: {
         fontWeight: 'bold',
-        color: '#039be5'
       }},
     { title: 'Confirmed', field: 'confirmed', type: 'numeric' },
     { title: 'Recovered', field: 'recovered', type: 'numeric' },
@@ -51,18 +50,17 @@ export default function MaterialTableDemo() {
 
   return (
     <div className={classes.padding}>
-    <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "center"}}>
+    <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "center", marginBottom: '15px'}}>
         {"Current Indonesia Status Based on Province."}
     </Typography>
     <br/>
     <MaterialTable
-      style={{borderTop: `4px solid #01579b`}}
       title={"Find your Province"}
       columns={columns}
       data={indonesianData}
       options={{
         headerStyle: {
-          backgroundColor: '#01579b',
+          backgroundColor: '#E74C3C',
           color: '#FFF',
           fontWeight: 'bold'
         }

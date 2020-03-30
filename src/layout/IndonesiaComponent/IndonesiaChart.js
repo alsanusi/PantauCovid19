@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 import CoronaApi from '../../api/CoronaApi';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
@@ -17,9 +18,10 @@ const useStyles = makeStyles(theme => ({
     },
     padding: {
       paddingTop: theme.spacing(2),
-      paddingLeft: theme.spacing(2),
-      paddingRight: theme.spacing(2),
-    }
+      paddingLeft: theme.spacing(4),
+      paddingRight: theme.spacing(4),
+      paddingBottom: '15px'
+    },
   }));
 
 export default function Example() {
@@ -27,8 +29,10 @@ export default function Example() {
     const [indonesianData, setIndonesianData] = useState([]);
 
     const todayDate = () => {
-        let selectedDate;
-        selectedDate = new Intl.DateTimeFormat('fr-CA').format(new Date());
+        let selectedDate, oneDayEarlier;
+        oneDayEarlier = new Date();
+        oneDayEarlier.setDate(oneDayEarlier.getDate() + 1);
+        selectedDate = new Intl.DateTimeFormat('fr-CA').format(oneDayEarlier);
         return selectedDate;
     }
 
@@ -55,10 +59,11 @@ export default function Example() {
     
     return (
     <div className={classes.padding}>
-        <Typography variant="subtitle1" style={{fontWeight: "bold"}}>
+        <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "center"}}>
             {"Indonesia COVID19 Confirmed Statistic."}
         </Typography>
         <br/>
+        <Paper style={{padding: '20px'}}>
         <ResponsiveContainer height={400}>
         <LineChart
             data={indonesianData}
@@ -74,6 +79,7 @@ export default function Example() {
             <Line type="monotone" dataKey="Confirmed" stroke="#E74C3C" strokeWidth={3} activeDot={{ r: 8 }} />
         </LineChart>
         </ResponsiveContainer>
+        </Paper>
     </div>
     );
 }

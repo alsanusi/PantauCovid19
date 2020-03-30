@@ -35,10 +35,10 @@ export default function CenteredGrid() {
           <Menu/>
           <Header/>
         </Grid>
-        <Grid item md={4} xs={12}>
+        <Grid item md={12} xs={12}>
           <IndonesiaSummaryData/>
         </Grid>
-        <Grid item md={7} xs={12}>
+        <Grid item md={12} xs={12}>
           <IndonesiaChart/>
         </Grid>
         <Grid item md={12} xs={12}>

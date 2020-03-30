@@ -52,7 +52,6 @@ export default function MaterialTableDemo() {
     </Typography>
     <br/>
     <MaterialTable
-      style={{borderTop: `4px solid #01579b`}}
       title={"Find your Country"}
       columns={columns}
       data={topListCountryData}

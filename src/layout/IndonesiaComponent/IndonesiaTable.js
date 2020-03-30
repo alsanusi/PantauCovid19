@@ -22,9 +22,9 @@ export default function MaterialTableDemo() {
       cellStyle: {
         fontWeight: 'bold',
       }},
-    { title: 'Confirmed', field: 'confirmed', type: 'numeric' },
-    { title: 'Recovered', field: 'recovered', type: 'numeric' },
-    { title: 'Death', field: 'death', type: 'numeric' },
+    { title: 'Confirmed', field: 'confirmed', type: 'numeric', width: 300, },
+    { title: 'Recovered', field: 'recovered', type: 'numeric', width: 300, },
+    { title: 'Death', field: 'death', type: 'numeric', width: 300, },
   ]
 
   const restructureData = (responseData) => {
@@ -50,7 +50,7 @@ export default function MaterialTableDemo() {
 
   return (
     <div className={classes.padding}>
-    <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "center", marginBottom: '15px'}}>
+    <Typography variant="subtitle1" style={{fontWeight: "bold", marginBottom: '10px'}}>
         {"Current Indonesia Status Based on Province."}
     </Typography>
     <br/>

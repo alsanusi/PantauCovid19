@@ -38,7 +38,7 @@ export default function Example() {
 
     const restructureData = (responseData) => {
         let filteredData;
-        filteredData = responseData.map(x => ({ 'Confirmed': x.total_confirmed, 'Date': moment(x.last_updated).format("MMMM D")}));
+        filteredData = responseData.map(x => ({ 'Recovered': x.total_recovered, 'Deaths': x.total_deaths, 'Date': moment(x.last_updated).format("MMMM D")}));
         return filteredData
     }
 
@@ -55,12 +55,12 @@ export default function Example() {
             }
           }
         })
-      },[indonesianData.Confirmed])
+      },[indonesianData.Recovered])
     
     return (
     <div className={classes.padding}>
         <Typography variant="subtitle1" style={{fontWeight: "bold"}}>
-            {"Indonesia COVID19 Confirmed Statistic."}
+            {"Indonesia COVID19 Death and Recovered Statistic."}
         </Typography>
         <br/>
         <Paper style={{padding: '20px'}}>
@@ -76,7 +76,8 @@ export default function Example() {
             <YAxis tick={{fontSize: 13}}/>
             <Tooltip />
             <Legend verticalAlign="top" height={40}/>
-            <Line type="monotone" dataKey="Confirmed" stroke="#E74C3C" strokeWidth={3} activeDot={{ r: 8 }} />
+            <Line type="monotone" dataKey="Deaths" stroke="#17202A" strokeWidth={2} activeDot={{ r: 8 }} />
+            <Line type="monotone" dataKey="Recovered" stroke="#28B463" strokeWidth={2} />
         </LineChart>
         </ResponsiveContainer>
         </Paper>

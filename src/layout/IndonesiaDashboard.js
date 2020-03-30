@@ -9,6 +9,7 @@ import Loading from './Component/Loading';
 const IndonesiaTable = lazy(() => import('./IndonesiaComponent/IndonesiaTable'));
 const IndonesiaSummaryData = lazy(() => import('./IndonesiaComponent/IndonesiaCard'));
 const IndonesiaChart = lazy(() => import('./IndonesiaComponent/IndonesiaChart'));
+const IndonesiaOtherChart = lazy(() => import('./IndonesiaComponent/IndonesiaOtherChart'));
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,8 +39,11 @@ export default function CenteredGrid() {
         <Grid item md={12} xs={12}>
           <IndonesiaSummaryData/>
         </Grid>
-        <Grid item md={12} xs={12}>
+        <Grid item md={7} xs={12}>
           <IndonesiaChart/>
+        </Grid>
+        <Grid item md={5} xs={12}>
+          <IndonesiaOtherChart/>
         </Grid>
         <Grid item md={12} xs={12}>
           <IndonesiaTable/>

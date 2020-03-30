@@ -7,9 +7,9 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles(theme => ({
     padding: {
       paddingTop: theme.spacing(2),
-      paddingLeft: theme.spacing(2),
-      paddingRight: theme.spacing(2),
-      paddingBottom: theme.spacing(2),
+      paddingLeft: theme.spacing(4),
+      paddingRight: theme.spacing(4),
+      paddingBottom: theme.spacing(10),
     }
   }));
 
@@ -51,7 +51,7 @@ export default function MaterialTableDemo() {
 
   return (
     <div className={classes.padding}>
-    <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "left"}}>
+    <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "center"}}>
         {"Current Indonesia Status Based on Province."}
     </Typography>
     <br/>

@@ -17,9 +17,8 @@ const useStyles = makeStyles(theme => ({
     },
     padding: {
       paddingTop: theme.spacing(2),
-      // paddingLeft: theme.spacing(2),
+      paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
-      paddingBottom: theme.spacing(10),
     }
   }));
 
@@ -56,11 +55,11 @@ export default function Example() {
     
     return (
     <div className={classes.padding}>
-        <Typography variant="subtitle1" style={{fontWeight: "bold", textAlign: "center"}}>
+        <Typography variant="subtitle1" style={{fontWeight: "bold"}}>
             {"Indonesia COVID19 Confirmed Statistic."}
         </Typography>
         <br/>
-        <ResponsiveContainer height={300}>
+        <ResponsiveContainer height={400}>
         <LineChart
             data={indonesianData}
             margin={{

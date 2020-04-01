@@ -90,7 +90,6 @@ i18n.use(LanguageDetector).init({
     },
     lng: "id",
     fallbackLng: "en",
-    debug: true,
     ns: ["translations"],
     defaultNS: "translations",
     interpolation: {

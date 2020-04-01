@@ -5,6 +5,7 @@ i18n.use(LanguageDetector).init({
     resources: {
         en: {
             translations: {
+                selectLanguage: "Language",
                 globalMenu: "GLOBAL",
                 aboutCovidMenu: "ABOUT COVID19",
                 welcome: "Welcome,",
@@ -47,6 +48,7 @@ i18n.use(LanguageDetector).init({
         },
         id: {
             translations: {
+                selectLanguage: "Bahasa",
                 globalMenu: "DUNIA",
                 aboutCovidMenu: "TENTANG COVID19",
                 welcome: "Selamat datang,",

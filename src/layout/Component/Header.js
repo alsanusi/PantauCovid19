@@ -66,6 +66,7 @@ function Welcome() {
 function LanguageSelection() {
   const classes = useStyles();
   const [lang, setLang] = useState("id")
+  const {t} = useTranslation();
 
   const handleChange = (event) => {
     setLang(event.target.value)
@@ -78,9 +79,10 @@ function LanguageSelection() {
         <Grid container wrap="nowrap">
           <Grid item xs style={{textAlign: 'right'}}>
             <FormControl className={classes.formControl}>
-              <InputLabel htmlFor="age-native-simple">Language</InputLabel>
+              <InputLabel htmlFor="age-native-simple">{(t("selectLanguage"))}</InputLabel>
               <Select
                 native
+                disableUnderline={true}
                 value={lang}
                 onChange={handleChange}
               >

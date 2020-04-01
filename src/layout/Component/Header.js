@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Animation from '../../components/Animation';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,6 +23,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function AutoGridNoWrap() {
   const classes = useStyles();
+  const {t} = useTranslation();
 
   const formatDate = () => {
     let selectedDate;
@@ -42,10 +44,10 @@ export default function AutoGridNoWrap() {
           </Grid>
           <Grid item xs>
               <Typography variant="subtitle1">
-                {"Welcome,"}
+                {t("welcome")}
               </Typography>
               <Typography variant="h4" component="h2" style={{fontWeight: "bold", marginTop: "10px"}}>
-                {"STAY SAFE EVERYONE!"}
+                {t("header")}
               </Typography>
               <Typography variant="body2" component="p">
                 {formatDate()}

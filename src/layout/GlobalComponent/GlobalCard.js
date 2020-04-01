@@ -7,6 +7,7 @@ import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import Animation from '../../components/Animation';
+import { useTranslation } from 'react-i18next';
 
 const basicStyles = theme => ({
   root: {
@@ -76,6 +77,7 @@ function DataLoading() {
 }
 
 export default function Dashboard() {
+  const {t} = useTranslation();
   const [globalData, setGlobalData] = useState({
     confirmed: '',
     deaths: '',
@@ -106,16 +108,16 @@ export default function Dashboard() {
      <Grid container direction="column" justify="space-between" style={{paddingTop: '16px', paddingLeft: '16px', paddingRight: '16px'}}>
         <Grid item md xs={12} style={{marginBottom: globalData.confirmed > 100000 ? '20px' : '0px'}}>
            <Typography variant="subtitle1" style={{fontWeight: 'bold'}}>
-              {"Current Global Status."}
+              {t("globalStatusHeader")}
             </Typography>
             <br/>
-            <CardDetail img={<PeopleAltIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={globalData.confirmed ? globalData.confirmed.toLocaleString() : <DataLoading/>} description={"Total Confirmed Cases."} color={"#E74C3C"} />
+            <CardDetail img={<PeopleAltIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={globalData.confirmed ? globalData.confirmed.toLocaleString() : <DataLoading/>} description={t("status.confirmedCase")} color={"#E74C3C"} />
         </Grid>
         <Grid item md xs={12}>
-            <CardDetail img={<FavoriteIcon style={{fontSize: 45, color: "#28B463"}}/>} value={globalData.recovered ? globalData.recovered.toLocaleString() : <DataLoading/>} description={"Total People Recovered."} color={"#28B463"} />
+            <CardDetail img={<FavoriteIcon style={{fontSize: 45, color: "#28B463"}}/>} value={globalData.recovered ? globalData.recovered.toLocaleString() : <DataLoading/>} description={t("status.recoveredCase")} color={"#28B463"} />
         </Grid>
         <Grid item md xs={12}>
-            <CardDetail img={<NotInterestedIcon style={{fontSize: 45, color: "#17202A"}}/>} value={globalData.deaths ? globalData.deaths.toLocaleString() : <DataLoading/>} description={"Total People Death."} color={"#17202A"} />
+            <CardDetail img={<NotInterestedIcon style={{fontSize: 45, color: "#17202A"}}/>} value={globalData.deaths ? globalData.deaths.toLocaleString() : <DataLoading/>} description={t("status.deathCase")} color={"#17202A"} />
         </Grid>
       </Grid>
     </div>

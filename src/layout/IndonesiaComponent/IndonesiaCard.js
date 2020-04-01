@@ -9,6 +9,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import Animation from '../../components/Animation';
 import AddIcon from '@material-ui/icons/Add';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = theme => ({
   root: {
@@ -69,6 +70,7 @@ function DataLoading() {
 }
 
 export default function IndonesiaCard() {
+  const {t} = useTranslation();
   const [indonesiaData, setIndonesiaData] = useState({
     confirmed: '',
     deaths: '',
@@ -97,20 +99,20 @@ export default function IndonesiaCard() {
   return (
     <div>
      <Typography variant="subtitle1" style={{fontWeight: "bold", paddingLeft: '32px', paddingTop: '16px'}}>
-        {"Current Indonesia Status."}
+        {t("indonesiaStatusHeader")}
      </Typography>
      <Grid container justify="space-between">
         <Grid item md xs={12}>
-          <Card img={<PeopleAltIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={indonesiaData.confirmed ? indonesiaData.confirmed.toLocaleString() : <DataLoading/>} description={"Total Confirmed Cases."} color={"#E74C3C"}/>
+          <Card img={<PeopleAltIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={indonesiaData.confirmed ? indonesiaData.confirmed.toLocaleString() : <DataLoading/>} description={t("status.confirmedCase")} color={"#E74C3C"}/>
         </Grid>
         <Grid item md xs={12}>
-          <Card img={<FavoriteIcon style={{fontSize: 45, color: "#28B463"}}/>} value={indonesiaData.recovered ? indonesiaData.recovered.toLocaleString() : <DataLoading/>} description={"Total People Recovered."} color={"#28B463"}/>
+          <Card img={<FavoriteIcon style={{fontSize: 45, color: "#28B463"}}/>} value={indonesiaData.recovered ? indonesiaData.recovered.toLocaleString() : <DataLoading/>} description={t("status.recoveredCase")} color={"#28B463"}/>
         </Grid>
         <Grid item md xs={12}>
-          <Card img={<NotInterestedIcon style={{fontSize: 45, color: "#17202A"}}/>} value={indonesiaData.deaths ? indonesiaData.deaths.toLocaleString() : <DataLoading/>} description={"Total People Death."} color={"#17202A"}/>
+          <Card img={<NotInterestedIcon style={{fontSize: 45, color: "#17202A"}}/>} value={indonesiaData.deaths ? indonesiaData.deaths.toLocaleString() : <DataLoading/>} description={t("status.deathCase")} color={"#17202A"}/>
         </Grid>
         <Grid item md xs={12}>
-          <Card img={<AddIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={indonesiaData.daily ? indonesiaData.daily.toLocaleString() : <DataLoading/>} description={"Today Confirmed Case."} color={"#E74C3C"}/>
+          <Card img={<AddIcon style={{fontSize: 45, color: "#E74C3C"}}/>} value={indonesiaData.daily ? indonesiaData.daily.toLocaleString() : <DataLoading/>} description={t("status.dailyCase")} color={"#E74C3C"}/>
         </Grid>
       </Grid>
     </div>

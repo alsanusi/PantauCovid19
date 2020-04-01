@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -95,10 +96,9 @@ const headerStyles = makeStyles(theme => ({
   },
 }));
 
-const Bold = ({ children }) => <Typography style={{ fontWeight: 'bold', display: 'inline-block' }}>{children}</Typography>
-
 function Header() {
   const classes = headerStyles();
+  const {t} = useTranslation();
 
   return (
     <div className={classes.root}>
@@ -108,7 +108,7 @@ function Header() {
             <Avatar alt="Corona Virus" src={require("../../assets/img/corona.png")} className={classes.large}/>
           </Grid>
           <Grid item md={10}>
-            <Typography style={{textAlign: 'justify'}}><Bold>Coronavirus disease (COVID-19)</Bold> is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes. - <Bold>WHO 2020</Bold></Typography>
+            <Typography style={{textAlign: 'justify'}}>{t('aboutCovid.description')}</Typography>
           </Grid>
         </Grid>
       </Paper>
@@ -118,13 +118,14 @@ function Header() {
 
 export default function FullWidthGrid() {
   const classes = useStyles();
+  const {t} = useTranslation();
 
   return (
     <div className={classes.root}>
       <Grid container justify="center" alignItems="center" spacing={3}>
         <Grid item xs={12} md={12} style={{marginTop: '20px', marginBottom: '5px'}}>
             <Typography gutterBottom variant="h5" component="h2" style={{textAlign: "center"}}>
-              What is Covid19 ?
+              {t('aboutCovid.header')}
             </Typography>
         </Grid>
         <Grid item xs={12} md={10}>
@@ -132,31 +133,31 @@ export default function FullWidthGrid() {
         </Grid>
         <Grid item xs={12} md={12} style={{marginTop: '20px', marginBottom: '5px'}}>
             <Typography gutterBottom variant="h5" component="h2" style={{textAlign: "center"}}>
-              COVID19 Symptoms ?
+              {t('aboutCovid.covidSymptoms.header')}
             </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
-            <SymptomsCard title="Fever" description="One of the most popular COVID19 symptoms is fever, which the body temperature is 38°C or higher"/>
+            <SymptomsCard title={t('aboutCovid.covidSymptoms.fever')} description={t('aboutCovid.covidSymptoms.feverDesc')}/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <SymptomsCard title="Shortness of breath" description="Beside fever, Shortness of breath is also one of the most popular COVID19 symptoms, which will bring pain in your chest."/>
+            <SymptomsCard title={t('aboutCovid.covidSymptoms.breath')} description={t('aboutCovid.covidSymptoms.breathDesc')}/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <SymptomsCard title="Sore throat" description="Having sore throat is also one of the COVID19 symptoms. Besides that, having dry cough and tiredness also include as COVID19 symptoms."/>
+            <SymptomsCard title={t('aboutCovid.covidSymptoms.soreThroat')} description={t('aboutCovid.covidSymptoms.soreThroatDesc')}/>
         </Grid>
         <Grid item xs={12} md={12} style={{marginTop: '20px', marginBottom: '5px'}}>
             <Typography gutterBottom variant="h5" component="h2" style={{textAlign: "center"}}>
-              How to Avoid COVID19 ?
+              {t('aboutCovid.avoidCovid.header')}
             </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
-            <AvoidCard title="Stay Home" img={require("../../assets/img/stayHome.jpg")} description="Stop traveling and hang out, just stay at home and keep your distance with others."/>
+            <AvoidCard title={t('aboutCovid.avoidCovid.stayHome')} img={require("../../assets/img/stayHome.jpg")} description={t('aboutCovid.avoidCovid.stayHomeDesc')}/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <AvoidCard title="Prevent Infection" img={require("../../assets/img/washHand.jpg")} description="Wash your hand often, use hand sanitiser and break the face-touching habit."/>
+            <AvoidCard title={t('aboutCovid.avoidCovid.preventInfection')} img={require("../../assets/img/washHand.jpg")} description={t('aboutCovid.avoidCovid.preventInfectionDesc')}/>
         </Grid>
         <Grid item xs={12} md={3}>
-            <AvoidCard title="Stay Healthy" img={require("../../assets/img/jogging.jpg")} description="Stay healhty by eating clean food, drink more mineral water and do some in-house sport."/>
+            <AvoidCard title={t('aboutCovid.avoidCovid.stayHealthy')} img={require("../../assets/img/jogging.jpg")} description={t('aboutCovid.avoidCovid.stayHealthyDesc')}/>
         </Grid>
       </Grid>
     </div>

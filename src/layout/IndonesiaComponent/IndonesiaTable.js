@@ -3,6 +3,7 @@ import MaterialTable from 'material-table';
 import { makeStyles } from '@material-ui/core/styles';
 import CoronaApi from '../../api/CoronaApi';
 import Typography from '@material-ui/core/Typography';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles(theme => ({
     padding: {
@@ -16,6 +17,7 @@ const useStyles = makeStyles(theme => ({
 export default function MaterialTableDemo() {
   const classes = useStyles();
   const [indonesianData, setIndonesianData] = useState([]);
+  const {t} = useTranslation();
 
   const columns = [
     { title: 'Province', field: 'province',
@@ -51,7 +53,7 @@ export default function MaterialTableDemo() {
   return (
     <div className={classes.padding}>
     <Typography variant="subtitle1" style={{fontWeight: "bold", marginBottom: '10px'}}>
-        {"Current Indonesia Status Based on Province."}
+        {t("indonesiaStatusProvinceHeader")}
     </Typography>
     <br/>
     <MaterialTable

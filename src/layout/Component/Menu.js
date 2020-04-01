@@ -4,7 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { withRouter } from "react-router";
-
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
 
 function CenteredTabs({location, match, history, ...props}) {
   const classes = useStyles();
+  const {t} = useTranslation();
   const [value, setValue] = React.useState("/");
 
   useEffect(()=>{
@@ -41,8 +42,8 @@ function CenteredTabs({location, match, history, ...props}) {
         centered
       >
             <Tab label="Indonesia" value="/" className={classes.tab}/>
-            <Tab label="Global" value="/global" className={classes.tab}/>
-            <Tab label="About Covid" value="/about-covid" className={classes.tab}/>
+            <Tab label={t("globalMenu")} value="/global" className={classes.tab}/>
+            <Tab label={t("aboutCovidMenu")} value="/about-covid" className={classes.tab}/>
       </Tabs>
     </Paper>
   );

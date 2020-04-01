@@ -9,8 +9,9 @@ i18n.use(LanguageDetector).init({
                 aboutCovidMenu: "ABOUT COVID19",
                 welcome: "Welcome,",
                 header: "STAY SAFE EVERYONE",
-                globalStatusHeader: "Current Global Status.",
-                indonesiaStatusHeader: "Current Indonesia Status",
+                globalStatusHeader: "Current global status.",
+                globalTableHeader: "Current country status",
+                indonesiaStatusHeader: "Current Indonesia status",
                 status: {
                     confirmedCase: "Total confirmed cases.",
                     recoveredCase: "Total people recovered.",
@@ -28,7 +29,8 @@ i18n.use(LanguageDetector).init({
                 aboutCovidMenu: "TENTANG COVID19",
                 welcome: "Selamat datang,",
                 header: "STAY SAFE EVERYONE",
-                globalStatusHeader: "Status Dunia Saat ini.",
+                globalStatusHeader: "Status dunia saat ini.",
+                globalTableHeader: "Status COVID19 di berbagai negara saat ini.",
                 indonesiaStatusHeader: "Status Indonesia saat ini.",
                 status: {
                     confirmedCase: "Total kasus terkonfirmasi.",

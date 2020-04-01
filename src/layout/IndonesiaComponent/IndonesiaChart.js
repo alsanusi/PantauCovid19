@@ -7,6 +7,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import moment from 'moment';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Example() {
     const classes = useStyles();
+    const {t} = useTranslation();
     const [indonesianData, setIndonesianData] = useState([]);
 
     const todayDate = () => {
@@ -60,7 +62,7 @@ export default function Example() {
     return (
     <div className={classes.padding}>
         <Typography variant="subtitle1" style={{fontWeight: "bold"}}>
-            {"Indonesia COVID19 Confirmed Statistic."}
+            {t("indonesiaConfirmedHeader")}
         </Typography>
         <br/>
         <Paper style={{padding: '20px'}}>

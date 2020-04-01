@@ -5,6 +5,8 @@ i18n.use(LanguageDetector).init({
     resources: {
         en: {
             translations: {
+                globalMenu: "GLOBAL",
+                aboutCovidMenu: "ABOUT COVID19",
                 welcome: "Welcome,",
                 header: "STAY SAFE EVERYONE",
                 globalStatusHeader: "Current Global Status.",
@@ -14,11 +16,16 @@ i18n.use(LanguageDetector).init({
                     recoveredCase: "Total people recovered.",
                     deathCase: "Total people death.",
                     dailyCase: "Today confirmed case."
-                }
+                },
+                indonesiaConfirmedHeader: "Indonesia COVID19 confirmed statistic.",
+                indonesiaRecoveredHeader: "Indonesia COVID19 death and recovered statistic.",
+                indonesiaStatusProvinceHeader: "Current Indonesia status based on province.",
             }
         },
         id: {
             translations: {
+                globalMenu: "DUNIA",
+                aboutCovidMenu: "TENTANG COVID19",
                 welcome: "Selamat datang,",
                 header: "STAY SAFE EVERYONE",
                 globalStatusHeader: "Status Dunia Saat ini.",
@@ -28,7 +35,10 @@ i18n.use(LanguageDetector).init({
                     recoveredCase: "Total orang yang sembuh.",
                     deathCase: "Total orang yang meninggal.",
                     dailyCase: "Kasus terkonfirmasi hari ini."
-                }
+                },
+                indonesiaConfirmedHeader: "Indonesia COVID19 statistik yang terkonfirmasi.",
+                indonesiaRecoveredHeader: "Indonesia COVID19 Statistik yang sembuh dan meninggal.",
+                indonesiaStatusProvinceHeader: "Status Indonesia saat ini berdasarkan provinsi.",
             }
         }
     },

@@ -22,7 +22,7 @@ class CoronaApi extends BaseApi {
 
     static getAllCountryData() {
         const api = new BaseApi();
-        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v3/analytics/country`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v2/analytics/country`));
         return api;
     }
 

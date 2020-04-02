@@ -106,7 +106,7 @@ export default function Dashboard() {
   return (
     <div>
      <Grid container direction="column" justify="space-between" style={{paddingTop: '16px', paddingLeft: '16px', paddingRight: '16px'}}>
-        <Grid item md xs={12} style={{marginBottom: globalData.confirmed > 100000 ? '20px' : '0px'}}>
+        <Grid item md xs={12}>
            <Typography variant="subtitle1" style={{fontWeight: 'bold'}}>
               {t("globalStatusHeader")}
             </Typography>

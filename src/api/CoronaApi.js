@@ -10,19 +10,19 @@ class CoronaApi extends BaseApi {
 
     static getGlobalData() {
         const api = new BaseApi();
-        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v2/stats`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v3/stats`));
         return api;
     }
 
     static getTopListData() {
         const api = new BaseApi();
-        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v2/stats/top`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v3/stats/top`));
         return api;
     }
 
     static getAllCountryData() {
         const api = new BaseApi();
-        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v2/analytics/country`));
+        api.call(api.https().get(`https://cors-anywhere.herokuapp.com/http://api.coronatracker.com/v3/analytics/country`));
         return api;
     }
 

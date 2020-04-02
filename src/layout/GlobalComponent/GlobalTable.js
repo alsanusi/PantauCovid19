@@ -23,7 +23,6 @@ export default function MaterialTableDemo() {
     { title: 'Country Name', field: 'countryName',
       cellStyle: {
         fontWeight: 'bold',
-        color: '#039be5'
       }},
     { title: 'Confirmed', field: 'confirmed', type: 'numeric' },
     { title: 'Recovered', field: 'recovered', type: 'numeric' },

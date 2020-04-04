@@ -1,5 +1,17 @@
 [
     {
+      "name": "RSUP Dr. Sardjito",
+      "phoneNumber": "(0274) 631190",
+      "address": "Jl. Kesehatan No.1, Senolowo, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281",
+      "loc": [-7.768531, 110.373474]
+    },
+    {
+      "name": "RSUD Panembahan Senopati",
+      "phoneNumber": "(0274) 367381",
+      "address": "Jl. Dr. Wahidin Sudiro Husodo, Area Sawah, Trirenggo, Kec. Bantul, Bantul, Daerah Istimewa Yogyakarta 55714",
+      "loc": [-7.892700, 110.338054]
+    },
+    {
       "name": "RSU Sanglah",
       "phoneNumber": "(0361) 227912",
       "address": "Jl. Diponegoro, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113",

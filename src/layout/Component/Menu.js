@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
       flexGrow: 1,
       borderRadius: 0, 
       boxShadow: "none",
-      backgroundColor: "#4880FF",
+      backgroundColor: '#E74C3C'
     },
     tab: {
       fontWeight: 'bold',

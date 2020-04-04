@@ -7,6 +7,7 @@ const footerStyles = makeStyles( theme => ({
     root: {
       width: '100%',
       position: 'fixed',
+      zIndex: 999,
       bottom: 0
     },
     label: {

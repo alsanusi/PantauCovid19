@@ -27,7 +27,7 @@ const SimpleExample = () => {
   const Bold = ({ children }) => <Typography variant="h6" style={{ fontWeight: 'bold', textAlign: 'center' }}>{children}</Typography>
 
   return (
-    <Map center={[-0.8917, 119.8707]} zoom={6} className={classes.mapDiv}>
+    <Map center={[-3.316694, 114.590111]} zoom={6} className={classes.mapDiv}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

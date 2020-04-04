@@ -1,5 +1,47 @@
 [
     {
+      "name": "RSUD Dr.Soedono Madiun",
+      "phoneNumber": "(0351) 454657",
+      "address": "Jl. Dr. Sutomo No.59, Kartoharjo, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63117",
+      "loc": [-7.626223, 111.524054]
+    },
+    {
+      "name": "RSUD Blambangan",
+      "phoneNumber": "(0333) 421118",
+      "address": "Jl. Letkol Istiqlah No.49, Singonegaran, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68415",
+      "loc": [-8.208238, 114.365971]
+    },
+    {
+      "name": "RSUD Dr R. Sosodoro Djatikoesoemo Bojonegoro",
+      "phoneNumber": "(0353) 3412133",
+      "address": "Jl. Veteran No.36, Jambean, Sukorejo, Kec. Bojonegoro, Kabupaten Bojonegoro, Jawa Timur 62115",
+      "loc": [-7.159434, 111.899571]
+    },
+    {
+      "name": "RSUD Dr. R. KOESMA Tuban",
+      "phoneNumber": "(0356) 321010",
+      "address": "Jalan Doktor Wahidin Sudirohusodo No.800, Sidorejo, Kecamatan Tuban, Jl. Dr. Wahidin Sh Gg. Bima No.800, Sidorejo, Kec. Tuban, Kabupaten Tuban, Jawa Timur 62315",
+      "loc": [-6.898588, 112.046530]
+    },
+    {
+      "name": "RSUD Dr. Soebandi",
+      "phoneNumber": "(0331) 487441",
+      "address": "Jl. DR. Soebandi No.124, Cangkring, Patrang, Kec. Patrang, Kabupaten Jember, Jawa Timur 68111",
+      "loc": [-8.151752, 113.715051]
+    },
+    {
+      "name": "RSUD Dr. Saiful Anwar",
+      "phoneNumber": "(0341) 362101",
+      "address": "Jl. Jaksa Agung Suprapto No.2, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65111",
+      "loc": [-7.972451, 112.631567]
+    },
+    {
+      "name": "RSUD Dr. Soetomo",
+      "phoneNumber": "(0351) 5501001",
+      "address": "Jl. Mayjen Prof. Dr. Moestopo No.6-8, Airlangga, Kec. Gubeng, Kota SBY, Jawa Timur 60286",
+      "loc": [-7.267736, 112.758617]
+    },
+    {
       "name": "RSUD Mataram",
       "phoneNumber": "(0370) 640774",
       "address": "Pagutan Raya, Jl. Bung Karno No.3, Pagesangan Tim., Kec. Mataram, Kota Mataram, Nusa Tenggara Bar. 83127",

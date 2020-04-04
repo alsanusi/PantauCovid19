@@ -3,7 +3,7 @@ import './App.css';
 import GlobalDashboard from './layout/GlobalDashboard';
 import IndonesiaDashboard from './layout/IndonesiaDashboard';
 import AboutCovid from './layout/AboutCovid';
-import HospitalMap from './layout/Map';
+import HospitalMap from './layout/HospitalMap';
 import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
 
 function App() {

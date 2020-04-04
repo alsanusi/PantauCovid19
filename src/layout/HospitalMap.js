@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import { Grid } from '@material-ui/core/';
 import Menu from './Component/Menu';
-import HospitalMap from './Component/HospitalMap';
+import HospitalMap from './Component/Map';
 // import Header from './Component/Header';
 import Footer from './Component/Footer';
 

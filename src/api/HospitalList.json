@@ -1,5 +1,47 @@
 [
     {
+      "name": "RSUP Dr. Hasan Sadikin Bandung",
+      "phoneNumber": "(022) 2034953",
+      "address": "Jl. Pasteur No.38, Pasteur, Kec. Sukajadi, Kota Bandung, Jawa Barat 40161",
+      "loc": [-6.896392, 107.598812]
+    },
+    {
+      "name": "RSUD Dr. Slamet Garut",
+      "phoneNumber": "(0262) 232720",
+      "address": "Jl. Rsu DR. Slamet No.12, Sukakarya, Kec. Tarogong Kidul, Kabupaten Garut, Jawa Barat 44151",
+      "loc": [-7.219691, 107.896994]
+    },
+    {
+      "name": "RSUD Gunung Jati Kota Cirebon",
+      "phoneNumber": "-",
+      "address": "Jl. Makmur, Kesambi, Kec. Kesambi, Kota Cirebon, Jawa Barat 45134",
+      "loc": [-6.731626, 108.555019]
+    },
+    {
+      "name": "RSP Dr. H. A. Rotinsulu",
+      "phoneNumber": "(022) 3034446",
+      "address": "Jl. Bukit Jarian No.40, Hegarmanah, Kec. Cidadap, Kota Bandung, Jawa Barat 40141",
+      "loc": [-6.878753, 107.606040]
+    },
+    {
+      "name": "RSUD Syamsudin SH",
+      "phoneNumber": "(0266) 245703",
+      "address": "Jl. Rumah Sakit No.1, Cikole, Kec. Cikole, Kota Sukabumi, Jawa Barat 43113",
+      "loc": [-6.914559, 106.934610]
+    },
+    {
+      "name": "RSUD Indramayu",
+      "phoneNumber": "(0234) 272655",
+      "address": "Jl. Murahnara No.7, Sindang, Kabupaten Indramayu, Jawa Barat 45222",
+      "loc": [-6.329406, 108.321558]
+    },
+    {
+      "name": "RSUD Subang",
+      "phoneNumber": "(0260) 411421",
+      "address": "Jl. Brigjen Katamso No.37, Dangdeur, Kec. Subang, Kabupaten Subang, Jawa Barat 41211",
+      "loc": [-6.557578, 107.746994]
+    },
+    {
       "name": "RSUP Dr. KARIADI",
       "phoneNumber": "(024) 8413476",
       "address": "Jl. DR. Sutomo No.16, Randusari, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50244",

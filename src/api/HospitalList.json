@@ -1,5 +1,53 @@
 [
     {
+      "name": "RSU Dr. Zainoel Abidin Banda Aceh",
+      "phoneNumber": "(0651) 34565",
+      "address": "Jl. Teuku Moh. Daud Beureueh No.108, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
+      "loc": [5.563787, 95.337588]
+    },
+    {
+      "name": "RSUD Cut Meutia",
+      "phoneNumber": "(0645) 46334",
+      "address": "Jl. Medan Banda Aceh, Bulat Rata, Blang Mangat, Kota Lhokseumawe, Aceh 24355",
+      "loc": [5.122238, 97.156325]
+    },
+    {
+      "name": "RSUP H. Adam Malik",
+      "phoneNumber": "(061) 8360143",
+      "address": "Jl. Bunga Lau No.17, Kemenangan Tani, Kec. Medan Tuntungan, Kota Medan, Sumatera Utara 20136",
+      "loc": [3.518516, 98.608649]
+    },
+    {
+      "name": "RSU Kabanjage",
+      "phoneNumber": "(0628) 20012",
+      "address": "Jl. Selamat Ketaren No.08, Lau Cimba, Kabanjahe, Kabupaten Karo, Sumatera Utara 22111",
+      "loc": [3.098092, 98.491673]
+    },
+    {
+      "name": "RSUD Tarutung",
+      "phoneNumber": "(0633) 21303",
+      "address": "Jalan Bin Harun Said No.1, Hutagalung Siwaluompu, Tarutung, Kabupaten Tapanuli Utara, Sumatera Utara 22411",
+      "loc": [2.026956, 98.960688]
+    },
+    {
+      "name": "RSU Padang Sidempuan",
+      "phoneNumber": "-",
+      "address": "JL. Dr. F.L. Tobing, Kantin, Padangsidimpuan Utara, Kota Padang Sidempuan, Sumatera Utara 22719",
+      "loc": [1.372626, 99.272339]
+    },
+    {
+      "name": "RSUP Dr. M. Djamil",
+      "phoneNumber": "(0751) 32371",
+      "address": "Jl. Perintis Kemerdekaan, Sawahan Tim., Kec. Padang Tim., Kota Padang, Sumatera Barat 25171",
+      "loc": [-0.943302, 100.366944]
+    },
+    {
+      "name": "RSUD Dr. Achmad Mochtar",
+      "phoneNumber": "Jl. Dr. Abdul Rivai No.1, Bukit Apit Puhun, Kec. Guguk Panjang, Kota Bukittinggi, Sumatera Barat 26122",
+      "address": "(0752) 21720",
+      "loc": [-0.299680, 100.366144]
+    },
+    {
       "name": "RSUD Arifin Achmad",
       "phoneNumber": "(0761) 21618",
       "address": "Jl. Diponegoro No.2, Sumahilang, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28156",

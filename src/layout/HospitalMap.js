@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { makeStyles } from '@material-ui/core';
 import { Grid } from '@material-ui/core/';
 import Menu from './Component/Menu';
-import HospitalMap from './Component/Map';
-// import Header from './Component/Header';
 import Footer from './Component/Footer';
+import Loading from './Component/Loading';
+
+const HospitalMap = lazy(() => import('./Component/Map'));
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,18 +26,19 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container justify="center" className={classes.padding}>
-        <Grid item md={12} xs={12}>
-          <Menu/>
-          {/* <Header/> */}
-        </Grid>
-        <Grid item md={12} xs={12}>
+      <Suspense fallback={<Loading/>}>
+        <Grid container justify="center" className={classes.padding}>
+          <Grid item md={12} xs={12}>
+            <Menu/>
+          </Grid>
+          <Grid item md={12} xs={12}>
             <HospitalMap/>
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Footer/>
+          </Grid>
         </Grid>
-        <Grid item md={12} xs={12}>
-          <Footer/>
-        </Grid>
-      </Grid>
+      </Suspense>
     </div>
   );
 }

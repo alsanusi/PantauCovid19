@@ -42,9 +42,9 @@ function CenteredTabs({location, match, history, ...props}) {
         centered
       >
             <Tab label="Indonesia" value="/" className={classes.tab}/>
+            <Tab label="ID - Hospital Map" value="/map" className={classes.tab}/>
             <Tab label={t("globalMenu")} value="/global" className={classes.tab}/>
             <Tab label={t("aboutCovidMenu")} value="/about-covid" className={classes.tab}/>
-            <Tab label="Map" value="/map" className={classes.tab}/>
       </Tabs>
     </Paper>
   );

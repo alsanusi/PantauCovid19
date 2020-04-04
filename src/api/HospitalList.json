@@ -1,5 +1,23 @@
 [
     {
+      "name": "RSPI Prof. Dr. Sulianti Saroso",
+      "phoneNumber": "(021) 6506559",
+      "address": "Jl. Sunter Permai Raya, RT.2/RW.12, Papanggo, Tj. Priok, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14340",
+      "loc": [-6.130022, 106.862295]
+    },
+    {
+      "name": "RSUP Persahabatan",
+      "phoneNumber": "(021) 4891708",
+      "address": "Jl. Persahabatan Raya No.1, Pisangan Tim., Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13230",
+      "loc": [-6.202705, 106.884802]
+    },
+    {
+      "name": "RSPAD Gatot Soebroto",
+      "phoneNumber": "(021) 3441008",
+      "address": "Jl. Abdul Rahman Saleh Raya No.24, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410",
+      "loc": [-6.176086, 106.837621]
+    },
+    {
       "name": "RSUP Dr. Sardjito",
       "phoneNumber": "(0274) 631190",
       "address": "Jl. Kesehatan No.1, Senolowo, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281",

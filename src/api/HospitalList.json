@@ -1,5 +1,47 @@
 [
     {
+      "name": "RSUD Dr. Mohammad Hoesin",
+      "phoneNumber": "(0711) 354088",
+      "address": "RW. 5, Jl. Jend. Sudirman KM.3,5, Sekip Jaya, Kec. Kemuning, Kota Palembang, Sumatera Selatan 30126",
+      "loc": [-2.966052, 104.750236]
+    },
+    {
+      "name": "RSUD Siti Aisyah Lubuk Linggau",
+      "phoneNumber": "(0733) 451604",
+      "address": "Timur 1, Jl. Lapter Silampari No.20, Air Kuti, Lubuk Linggau Tim. I, Kota Lubuklinggau, Sumatera Selatan 31625",
+      "loc": [-3.271693, 102.915512]
+    },
+    {
+      "name": "RSUD Kayu Agung",
+      "phoneNumber": "(0712) 323889",
+      "address": "JL. Lintas Timur Lampung - Palembang, Jua Jua, Kec. Kayu Agung, Kabupaten Ogan Komering Ilir, Sumatera Selatan 30867",
+      "loc": [-3.407914, 104.825036]
+    },
+    {
+      "name": "RSUD Lahat",
+      "phoneNumber": "(0731) 323080",
+      "address": "Jalan Mayjend Harun Sohar II No.28, Ps. Baru, Kec. Lahat, Kabupaten Lahat, Sumatera Selatan 31461",
+      "loc": [-3.792652, 103.534242]
+    },
+    {
+      "name": "RSUD Dr. M. Yunus Bengkulu",
+      "phoneNumber": "(0736) 52004",
+      "address": "Jl. Bhayangkara, Sidomulyo, Kec. Gading Cemp., Kota Bengkulu, Bengkulu 38211",
+      "loc": [-3.834147, 102.314004]
+    },
+    {
+      "name": "RSUD Arga Makmur",
+      "phoneNumber": "(0737) 521118",
+      "address": "Jl. Siti Khodijah No.8, Kali, Arma Jaya, Kabupaten Bengkulu Utara, Bengkulu 38611",
+      "loc": [-3.442076, 102.191137]
+    },
+    {
+      "name": "RSUD Hasanuddin Damrah Manna",
+      "phoneNumber": "0853-8163-7684",
+      "address": "Jl. Raya Padang Panjang, Pagar Dewa, Kota Manna, Kabupaten Bengkulu Selatan, Bengkulu 38515",
+      "loc": [-4.442128, 102.896350]
+    },
+    {
       "name": "RSUD Dr. H. Abdul Moeloek",
       "phoneNumber": "(0721) 703312",
       "address": "Jl. Dr. Rivai No.6, Penengahan, Kec. Tj. Karang Pusat, Kota Bandar Lampung, Lampung 35112",

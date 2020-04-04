@@ -2,6 +2,7 @@ import React from 'react'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import { makeStyles } from '@material-ui/styles'
 import HospitalList from '../../api/HospitalList.json'
+import L from 'leaflet'
 
 const useStyles = makeStyles({
   mapDiv: {
@@ -11,6 +12,11 @@ const useStyles = makeStyles({
     overflow: 'hidden',
   },
 })
+
+const customMarker = L.icon({ 
+  iconUrl: require("../../assets/img/hospital.svg"),
+  iconSize: new L.Point(25, 40)
+ })
 
 const SimpleExample = () => {
   const classes = useStyles()
@@ -23,7 +29,7 @@ const SimpleExample = () => {
       />
       {
         HospitalList.map((position, idx) =>
-          <Marker key={`marker-${idx}`} position={position.loc}>
+          <Marker key={`marker-${idx}`} position={position.loc} icon={customMarker}>
             <Popup>
               {position.name}
               <br />

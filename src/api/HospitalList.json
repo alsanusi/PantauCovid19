@@ -1,0 +1,578 @@
+[
+    {
+      "name": "RSU Dr. Zainoel Abidin Banda Aceh",
+      "phoneNumber": "(0651) 34565",
+      "address": "Jl. Teuku Moh. Daud Beureueh No.108, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
+      "loc": [5.563787, 95.337588]
+    },
+    {
+      "name": "RSUD Cut Meutia",
+      "phoneNumber": "(0645) 46334",
+      "address": "Jl. Medan Banda Aceh, Bulat Rata, Blang Mangat, Kota Lhokseumawe, Aceh 24355",
+      "loc": [5.122238, 97.156325]
+    },
+    {
+      "name": "RSUP H. Adam Malik",
+      "phoneNumber": "(061) 8360143",
+      "address": "Jl. Bunga Lau No.17, Kemenangan Tani, Kec. Medan Tuntungan, Kota Medan, Sumatera Utara 20136",
+      "loc": [3.518516, 98.608649]
+    },
+    {
+      "name": "RSU Kabanjage",
+      "phoneNumber": "(0628) 20012",
+      "address": "Jl. Selamat Ketaren No.08, Lau Cimba, Kabanjahe, Kabupaten Karo, Sumatera Utara 22111",
+      "loc": [3.098092, 98.491673]
+    },
+    {
+      "name": "RSUD Tarutung",
+      "phoneNumber": "(0633) 21303",
+      "address": "Jalan Bin Harun Said No.1, Hutagalung Siwaluompu, Tarutung, Kabupaten Tapanuli Utara, Sumatera Utara 22411",
+      "loc": [2.026956, 98.960688]
+    },
+    {
+      "name": "RSU Padang Sidempuan",
+      "phoneNumber": "-",
+      "address": "JL. Dr. F.L. Tobing, Kantin, Padangsidimpuan Utara, Kota Padang Sidempuan, Sumatera Utara 22719",
+      "loc": [1.372626, 99.272339]
+    },
+    {
+      "name": "RSUP Dr. M. Djamil",
+      "phoneNumber": "(0751) 32371",
+      "address": "Jl. Perintis Kemerdekaan, Sawahan Tim., Kec. Padang Tim., Kota Padang, Sumatera Barat 25171",
+      "loc": [-0.943302, 100.366944]
+    },
+    {
+      "name": "RSUD Dr. Achmad Mochtar",
+      "phoneNumber": "Jl. Dr. Abdul Rivai No.1, Bukit Apit Puhun, Kec. Guguk Panjang, Kota Bukittinggi, Sumatera Barat 26122",
+      "address": "(0752) 21720",
+      "loc": [-0.299680, 100.366144]
+    },
+    {
+      "name": "RSUD Arifin Achmad",
+      "phoneNumber": "(0761) 21618",
+      "address": "Jl. Diponegoro No.2, Sumahilang, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28156",
+      "loc": [0.523380, 101.451841]
+    },
+    {
+      "name": "RSUD Muhammad Sani Kab. Karimun",
+      "phoneNumber": "(0777) 327808",
+      "address": "Jalan Poros No.1, Harjosari, Tebing, Kabupaten Karimun, Kepulauan Riau 29663",
+      "loc": [1.013768, 103.413743]
+    },
+    {
+      "name": "RSU Tanjung Pinang",
+      "phoneNumber": "(0771) 7335203",
+      "address": "Air Raja, Kec. Tanjungpinang Tim., Kota Tanjung Pinang, Kepulauan Riau 29125",
+      "loc": [0.923844, 104.500138]
+    },
+    {
+      "name": "RSUD Puri Husada Tembilahan",
+      "phoneNumber": "(0768) 22118",
+      "address": "Jl. Veteran No.52, Tembilahan Hilir, Tembilahan, Kabupaten Indragiri Hilir, Riau 29281",
+      "loc": [-0.322746, 103.163158]
+    },
+    {
+      "name": "RSUD Dumai",
+      "phoneNumber": "(0765) 440992",
+      "address": "Jl. Tj. Jati No.4, Buluh Kasap, Dumai Tim., Kota Dumai, Riau 28812",
+      "loc": [1.680420, 101.459535]
+    },
+    {
+      "name": "RS BP Batam",
+      "phoneNumber": "(0778) 322121",
+      "address": "Jalan Cipto Mangunkusumo No.01, Tj. Pinggir, Kec. Sekupang, Kota Batam, Kepulauan Riau 20444",
+      "loc": [1.129798, 103.930630]
+    },
+    {
+      "name": "RSUD Raden Mattaher Jambi",
+      "phoneNumber": "(0741) 61692",
+      "address": "Jl. Letjen Suprapto No.31, Telanaipura, Kec. Telanaipura, Kota Jambi, Jambi 36361",
+      "loc": [-1.602827, 103.580256]
+    },
+    {
+      "name": "RSUD Dr. H. Marsidi Judono",
+      "phoneNumber": "(0719) 22190",
+      "address": "Jl. Jend. Sudirman KM.5,5, Aik Rayak, Tj. Pandan, Kabupaten Belitung, Kepulauan Bangka Belitung 33411",
+      "loc": [-2.748841, 107.678227]
+    },
+    {
+      "name": "RSUD Pangkal Pinang",
+      "phoneNumber": "(0717) 422693",
+      "address": "Bukitbesar, Kec. Girimaya, Kota Pangkal Pinang, Kepulauan Bangka Belitung 33684",
+      "loc": [-2.143926, 106.124354]
+    },
+    {
+      "name": "RSUD Dr. Mohammad Hoesin",
+      "phoneNumber": "(0711) 354088",
+      "address": "RW. 5, Jl. Jend. Sudirman KM.3,5, Sekip Jaya, Kec. Kemuning, Kota Palembang, Sumatera Selatan 30126",
+      "loc": [-2.966052, 104.750236]
+    },
+    {
+      "name": "RSUD Siti Aisyah Lubuk Linggau",
+      "phoneNumber": "(0733) 451604",
+      "address": "Timur 1, Jl. Lapter Silampari No.20, Air Kuti, Lubuk Linggau Tim. I, Kota Lubuklinggau, Sumatera Selatan 31625",
+      "loc": [-3.271693, 102.915512]
+    },
+    {
+      "name": "RSUD Kayu Agung",
+      "phoneNumber": "(0712) 323889",
+      "address": "JL. Lintas Timur Lampung - Palembang, Jua Jua, Kec. Kayu Agung, Kabupaten Ogan Komering Ilir, Sumatera Selatan 30867",
+      "loc": [-3.407914, 104.825036]
+    },
+    {
+      "name": "RSUD Lahat",
+      "phoneNumber": "(0731) 323080",
+      "address": "Jalan Mayjend Harun Sohar II No.28, Ps. Baru, Kec. Lahat, Kabupaten Lahat, Sumatera Selatan 31461",
+      "loc": [-3.792652, 103.534242]
+    },
+    {
+      "name": "RSUD Dr. M. Yunus Bengkulu",
+      "phoneNumber": "(0736) 52004",
+      "address": "Jl. Bhayangkara, Sidomulyo, Kec. Gading Cemp., Kota Bengkulu, Bengkulu 38211",
+      "loc": [-3.834147, 102.314004]
+    },
+    {
+      "name": "RSUD Arga Makmur",
+      "phoneNumber": "(0737) 521118",
+      "address": "Jl. Siti Khodijah No.8, Kali, Arma Jaya, Kabupaten Bengkulu Utara, Bengkulu 38611",
+      "loc": [-3.442076, 102.191137]
+    },
+    {
+      "name": "RSUD Hasanuddin Damrah Manna",
+      "phoneNumber": "0853-8163-7684",
+      "address": "Jl. Raya Padang Panjang, Pagar Dewa, Kota Manna, Kabupaten Bengkulu Selatan, Bengkulu 38515",
+      "loc": [-4.442128, 102.896350]
+    },
+    {
+      "name": "RSUD Dr. H. Abdul Moeloek",
+      "phoneNumber": "(0721) 703312",
+      "address": "Jl. Dr. Rivai No.6, Penengahan, Kec. Tj. Karang Pusat, Kota Bandar Lampung, Lampung 35112",
+      "loc": [-5.402913, 105.258657]
+    },
+    {
+      "name": "RSUD Dr. H. Bob Bazar, SKM",
+      "phoneNumber": "(0727) 322159",
+      "address": "Jl. Lettu Rohani No.14 B, Kedaton, Kec. Kalianda, Kabupaten Lampung Selatan, Lampung 35551",
+      "loc": [-5.727473, 105.596540]
+    },
+    {
+      "name": "RSD Mayjend HM Ryacudu",
+      "phoneNumber": "(0724) 22095",
+      "address": "Jl. Jend. Sudirman No.2, Kota Gapura, Kotabumi, Kabupaten Lampung Utara, Lampung 34511",
+      "loc": [-4.832623, 104.891448]
+    },
+    {
+      "name": "RSUD Ahmad Yani Metro",
+      "phoneNumber": "-",
+      "address": "Jl. Ahmad Yani No.13, Imopuro, Kec. Metro Pusat, Kota Metro, Lampung 34124",
+      "loc": [-5.115527, 105.310079]
+    },
+    {
+      "name": "RSU Kab. Tangerang",
+      "phoneNumber": "(021) 5523507",
+      "address": "Jl. Jend. Ahmad Yani No.9, RT.001/RW.003, Sukaasih, Kec. Tangerang, Kota Tangerang, Banten 15111",
+      "loc": [-6.169656, 106.635665]
+    },
+    {
+      "name": "RSUD SERANG",
+      "phoneNumber": "(0254) 355355",
+      "address": "Kotabaru, Kec. Serang, Kota Serang, Banten 42112",
+      "loc": [-6.118813, 106.154339]
+    },
+    {
+      "name": "RSPI Prof. Dr. Sulianti Saroso",
+      "phoneNumber": "(021) 6506559",
+      "address": "Jl. Sunter Permai Raya, RT.2/RW.12, Papanggo, Tj. Priok, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14340",
+      "loc": [-6.130022, 106.862295]
+    },
+    {
+      "name": "RSUP Persahabatan",
+      "phoneNumber": "(021) 4891708",
+      "address": "Jl. Persahabatan Raya No.1, Pisangan Tim., Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13230",
+      "loc": [-6.202705, 106.884802]
+    },
+    {
+      "name": "RSPAD Gatot Soebroto",
+      "phoneNumber": "(021) 3441008",
+      "address": "Jl. Abdul Rahman Saleh Raya No.24, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410",
+      "loc": [-6.176086, 106.837621]
+    },
+    {
+      "name": "RSUP Dr. Sardjito",
+      "phoneNumber": "(0274) 631190",
+      "address": "Jl. Kesehatan No.1, Senolowo, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281",
+      "loc": [-7.768531, 110.373474]
+    },
+    {
+      "name": "RSUD Panembahan Senopati",
+      "phoneNumber": "(0274) 367381",
+      "address": "Jl. Dr. Wahidin Sudiro Husodo, Area Sawah, Trirenggo, Kec. Bantul, Bantul, Daerah Istimewa Yogyakarta 55714",
+      "loc": [-7.892700, 110.338054]
+    },
+    {
+      "name": "RSU Sanglah",
+      "phoneNumber": "(0361) 227912",
+      "address": "Jl. Diponegoro, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113",
+      "loc": [-8.675714, 115.213204]
+    },
+    {
+      "name": "RSU Tabanan Bali",
+      "phoneNumber": "(0361) 811027",
+      "address": "Jl. Pahlawan No.14, Delod Peken, Kec. Tabanan, Kabupaten Tabanan, Bali 82121",
+      "loc": [-8.539100, 115.132221]
+    },
+    {
+      "name": "RSUD Sanjiwani Gianyar",
+      "phoneNumber": "(0362) 943049",
+      "address": "Jl. Ciung Wanara-Gianyar No.2, Gianyar, Kec. Gianyar, Kabupaten Gianyar, Bali 80511",
+      "loc": [-8.537146, 115.322532]
+    },
+    {
+      "name": "RSUP Dr. Hasan Sadikin Bandung",
+      "phoneNumber": "(022) 2034953",
+      "address": "Jl. Pasteur No.38, Pasteur, Kec. Sukajadi, Kota Bandung, Jawa Barat 40161",
+      "loc": [-6.896392, 107.598812]
+    },
+    {
+      "name": "RSUD Dr. Slamet Garut",
+      "phoneNumber": "(0262) 232720",
+      "address": "Jl. Rsu DR. Slamet No.12, Sukakarya, Kec. Tarogong Kidul, Kabupaten Garut, Jawa Barat 44151",
+      "loc": [-7.219691, 107.896994]
+    },
+    {
+      "name": "RSUD Gunung Jati Kota Cirebon",
+      "phoneNumber": "-",
+      "address": "Jl. Makmur, Kesambi, Kec. Kesambi, Kota Cirebon, Jawa Barat 45134",
+      "loc": [-6.731626, 108.555019]
+    },
+    {
+      "name": "RSP Dr. H. A. Rotinsulu",
+      "phoneNumber": "(022) 3034446",
+      "address": "Jl. Bukit Jarian No.40, Hegarmanah, Kec. Cidadap, Kota Bandung, Jawa Barat 40141",
+      "loc": [-6.878753, 107.606040]
+    },
+    {
+      "name": "RSUD Syamsudin SH",
+      "phoneNumber": "(0266) 245703",
+      "address": "Jl. Rumah Sakit No.1, Cikole, Kec. Cikole, Kota Sukabumi, Jawa Barat 43113",
+      "loc": [-6.914559, 106.934610]
+    },
+    {
+      "name": "RSUD Indramayu",
+      "phoneNumber": "(0234) 272655",
+      "address": "Jl. Murahnara No.7, Sindang, Kabupaten Indramayu, Jawa Barat 45222",
+      "loc": [-6.329406, 108.321558]
+    },
+    {
+      "name": "RSUD Subang",
+      "phoneNumber": "(0260) 411421",
+      "address": "Jl. Brigjen Katamso No.37, Dangdeur, Kec. Subang, Kabupaten Subang, Jawa Barat 41211",
+      "loc": [-6.557578, 107.746994]
+    },
+    {
+      "name": "RSUP Dr. KARIADI",
+      "phoneNumber": "(024) 8413476",
+      "address": "Jl. DR. Sutomo No.16, Randusari, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50244",
+      "loc": [-6.994073, 110.407522]
+    },
+    {
+      "name": "RSUD Dr. H. Soewondo Kendal",
+      "phoneNumber": "(0294) 381433",
+      "address": "Jl. Laut No.21, Ngilir, Kec. Kendal, Kabupaten Kendal, Jawa Tengah 51311",
+      "loc": [-6.917760, 110.206198]
+    },
+    {
+      "name": "RSUD Dr. Moewardi Surakarta",
+      "phoneNumber": "(0271) 637415",
+      "address": "Jl. Kolonel Sutarto No.132, Jebres, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126",
+      "loc": [-7.558079, 110.841665]
+    },
+    {
+      "name": "RSUD Banyumas",
+      "phoneNumber": "(0281) 796031",
+      "address": "Jl. Rumah Sakit No.1, Karangpucung, Kejawar, Kec. Banyumas, Kabupaten Banyumas, Jawa Tengah 53192",
+      "loc": [-7.529070, 109.292667]
+    },
+    {
+      "name": "RSUD Dr. Lukmonohadi Kudus",
+      "phoneNumber": "(0291) 444001",
+      "address": "Jalan Dr. Lukmonohadi No.19, Jl. Dr. Lukmono Hadi No.19, Cobowo, Ploso, Kec. Jati, Kabupaten Kudus, Jawa Tengah 59348",
+      "loc": [-6.818894, 110.836621]
+    },
+    {
+      "name": "RSUD Dr Soeselo Slawi Kab. Tegal",
+      "phoneNumber": "(0283) 491016",
+      "address": "Jl. DR. Soetomo No.63, Slawi Kulon, Kec. Slawi, Tegal, Jawa Tengah 52419",
+      "loc": [-6.993376, 109.137697]
+    },
+    {
+      "name": "RSUD Kraton Kab. Pekalongan",
+      "phoneNumber": "(0285) 423225",
+      "address": "Jl. Veteran No.31, Dukuh, Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51117",
+      "loc": [-6.881342, 109.667525]
+    },
+    {
+      "name": "RSUD Tidar",
+      "phoneNumber": "(0293) 362463",
+      "address": "Jl. Tidar No.30 A, Kemirirejo, Kec. Magelang Tengah, Kota Magelang, Jawa Tengah 56125",
+      "loc": [-7.485437, 110.218280]
+    },
+    {
+      "name": "RSUD Prof.Dr.Margono Soekarjo",
+      "phoneNumber": "0852-2795-4477",
+      "address": "Kebontebu, Berkoh, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53146",
+      "loc": [-7.437847, 109.267971]
+    },
+    {
+      "name": "RSUP Dr. Soeradji Tirtonegoro Klaten",
+      "phoneNumber": "(0272) 321020",
+      "address": "Jl. KRT Pringgodiningrat Jl. Dr. Soeradji Tirtonegoro No.1, Dusun 1, Tegalyoso, Kec. Klaten Sel., Kabupaten Klaten, Jawa Tengah 57424",
+      "loc": [-7.714279, 110.588666]
+    },
+    {
+      "name": "RSUD Dr.Soedono Madiun",
+      "phoneNumber": "(0351) 454657",
+      "address": "Jl. Dr. Sutomo No.59, Kartoharjo, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63117",
+      "loc": [-7.626223, 111.524054]
+    },
+    {
+      "name": "RSUD Blambangan",
+      "phoneNumber": "(0333) 421118",
+      "address": "Jl. Letkol Istiqlah No.49, Singonegaran, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68415",
+      "loc": [-8.208238, 114.365971]
+    },
+    {
+      "name": "RSUD Dr R. Sosodoro Djatikoesoemo Bojonegoro",
+      "phoneNumber": "(0353) 3412133",
+      "address": "Jl. Veteran No.36, Jambean, Sukorejo, Kec. Bojonegoro, Kabupaten Bojonegoro, Jawa Timur 62115",
+      "loc": [-7.159434, 111.899571]
+    },
+    {
+      "name": "RSUD Dr. R. KOESMA Tuban",
+      "phoneNumber": "(0356) 321010",
+      "address": "Jalan Doktor Wahidin Sudirohusodo No.800, Sidorejo, Kecamatan Tuban, Jl. Dr. Wahidin Sh Gg. Bima No.800, Sidorejo, Kec. Tuban, Kabupaten Tuban, Jawa Timur 62315",
+      "loc": [-6.898588, 112.046530]
+    },
+    {
+      "name": "RSUD Dr. Soebandi",
+      "phoneNumber": "(0331) 487441",
+      "address": "Jl. DR. Soebandi No.124, Cangkring, Patrang, Kec. Patrang, Kabupaten Jember, Jawa Timur 68111",
+      "loc": [-8.151752, 113.715051]
+    },
+    {
+      "name": "RSUD Dr. Saiful Anwar",
+      "phoneNumber": "(0341) 362101",
+      "address": "Jl. Jaksa Agung Suprapto No.2, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65111",
+      "loc": [-7.972451, 112.631567]
+    },
+    {
+      "name": "RSUD Dr. Soetomo",
+      "phoneNumber": "(0351) 5501001",
+      "address": "Jl. Mayjen Prof. Dr. Moestopo No.6-8, Airlangga, Kec. Gubeng, Kota SBY, Jawa Timur 60286",
+      "loc": [-7.267736, 112.758617]
+    },
+    {
+      "name": "RSUD Mataram",
+      "phoneNumber": "(0370) 640774",
+      "address": "Pagutan Raya, Jl. Bung Karno No.3, Pagesangan Tim., Kec. Mataram, Kota Mataram, Nusa Tenggara Bar. 83127",
+      "loc": [-8.598916, 116.114332]
+    },
+    {
+      "name": "RSU Dr. R Sudjono",
+      "phoneNumber": "(0376) 21599",
+      "address": "Jl. Prof. M Yamin SH No.55, Khusus Kota Selong, Selong, Kabupaten Lombok Timur, Nusa Tenggara Bar. 83611",
+      "loc": [-8.650534, 116.528392]
+    },
+    {
+      "name": "RSUD Praya",
+      "phoneNumber": "(0370) 6635050",
+      "address": "Jl. Basuki Rahmat, Bunut Baok, Praya, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83511",
+      "loc": [-8.702009, 116.295071]
+    },
+    {
+      "name": "RSUD Prof. Dr. W Z Johannes",
+      "phoneNumber": "(0380) 833614",
+      "address": "Jl. Moch Hatta No.19, Kuanino, Kec. Kota Raja, Kota Kupang, Nusa Tenggara Tim.",
+      "loc": [-10.168224, 123.585742]
+    },
+    {
+      "name": "RSUD Dr. TC Hillers",
+      "phoneNumber": "0812-6115-3944",
+      "address": "JL Wairklau, No. 1, 86113, Kota Baru, Alok Tim., Kabupaten Sikka, Nusa Tenggara Tim.",
+      "loc": [-8.622280, 122.204275]
+    },
+    {
+      "name": "RSUD Dr. Soedarso",
+      "phoneNumber": "(0561) 737701",
+      "address": "Jl. DR. Soedarso No.1, Bangka Belitung Laut, Kec. Pontianak Tenggara, Kota Pontianak, Kalimantan Barat 78111",
+      "loc": [-0.061427, 109.364595]
+    },
+    {
+      "name": "RSUD Dr. Abdul Aziz",
+      "phoneNumber": "(0562) 631798",
+      "address": "Jl. Dr. Sutomo No.28, Pasiran, Singkawang Bar., Kota Singkawang, Kalimantan Barat 79123",
+      "loc": [0.895527, 108.972717]
+    },
+    {
+      "name": "RSUD Ade Mohammad Djoen Sintang",
+      "phoneNumber": "Jl. Pattimura No.1, Tj. Puri, Kec. Sintang, Kabupaten Sintang, Kalimantan Barat 78613",
+      "address": "(0565) 21002",
+      "loc": [0.078496, 111.496008]
+    },
+    {
+      "name": "RSUD Dr. Doris Sylvanus",
+      "phoneNumber": "-",
+      "address": "Jl. Palangkaraya, Bukit Tunggal, Kec. Jekan Raya, Kota Palangka Raya, Kalimantan Tengah 74874",
+      "loc": [-2.210637, 113.922997]
+    },
+    {
+      "name": "RSUD Dr. Murjani Sampit",
+      "phoneNumber": "(0531) 21010",
+      "address": "Jalan Haji Muhammad Arsyad No.65, Mentawa Baru Hilir, Mentawa Baru/Ketapan, Jl. H.M. Arsyad No.65, Mentawa Baru Hulu, Mentawa Baru/Ketapan, Kabupaten Kotawaringin Timur, Kalimantan Tengah 74321",
+      "loc": [-2.542647, 112.949043]
+    },
+    {
+      "name": "RSUD Ulin",
+      "phoneNumber": "(0511) 3252180",
+      "address": "Jl. A. Yani No.79, Sungai Baru, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70233",
+      "loc": [-3.322799, 114.601189]
+    },
+    {
+      "name": "RSUD H. Boejasin Pelaihari",
+      "phoneNumber": "(0512) 21083",
+      "address": "Jl. H. Boejasin No. 68A, Angsau, Pelaihari, Jl. H. Boejasin No.68A, Angsau, Kec. Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan 70814",
+      "loc": [-3.799330, 114.777978]
+    },
+    {
+      "name": "RSUD Tarakan",
+      "phoneNumber": "(0551) 21166",
+      "address": "Jl. Pulau Irian No.1, Kp. Satu Skip, Tarakan Tengah, Kota Tarakan, Kalimantan Utara",
+      "loc": [3.318225, 117.605067]
+    },
+    {
+      "name": "RSUD Dr. Kanujoso Djatiwibowo",
+      "phoneNumber": "(0542) 873901",
+      "address": "Jl. MT Haryono No.656, Batu Ampar, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur 76115",
+      "loc": [-1.225504, 116.868166]
+    },
+    {
+      "name": "RSUD Abdul Wahab Sjahranie",
+      "phoneNumber": "(0541) 738118",
+      "address": "Jl. Palang Merah No.1, Sidodadi, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75123",
+      "loc": [-0.478977, 117.144267]
+    },
+    {
+      "name": "RSUD Taman Husada Bontang",
+      "phoneNumber": "(0548) 23000",
+      "address": "Jl. Letjen S. Parman No.1, Belimbing, Bontang Bar., Kota Bontang, Kalimantan Timur 75331",
+      "loc": [0.142677, 117.447809]
+    },
+    {
+      "name": "RSUD Panglima Sebaya",
+      "phoneNumber": "(0543) 24563",
+      "address": "Jalan Ciptomangunkusimo No.2, Tepian Batang, Tanah Grogot, Kabupaten Paser, Kalimantan Timur 76251",
+      "loc": [-1.873474, 116.178674]
+    },
+    {
+      "name": "RSU Porf.Dr.RD Kandou",
+      "phoneNumber": "(0431) 8383058",
+      "address": "Jl. Raya Tanawangko No.56, Malalayang Satu Barat, Kec. Malalayang, Kota Manado, Sulawesi Utara",
+      "loc": [1.453692, 124.808145]
+    },
+    {
+      "name": "RSU Dr.Sam Ratulangi",
+      "phoneNumber": "(0431) 321171",
+      "address": "Jl. Suprapto No.123, Luaan, Tondano Tim., Kabupaten Minahasa, Sulawesi Utara",
+      "loc": [1.309694, 124.916583]
+    },
+    {
+      "name": "RSU Porf. Dr. H. Aloei Saboe",
+      "phoneNumber": "(0435) 821218",
+      "address": "Jl. Profesor DR. H. Aloei Saboe, Wongkaditi, Kota Utara, Kota Gorontalo, Gorontalo 96115",
+      "loc": [-0.857597, 119.884025]
+    },
+    {
+      "name": "RSUD Undata Palu",
+      "phoneNumber": "(0451) 4908020",
+      "address": "Jalan Trans Sulawesi Tondo, Talise, Mantikulore, Kota Palu, Sulawesi Tengah 94119",
+      "loc": [-0.857597, 119.884025]
+    },
+    {
+      "name": "RSUD Kab. Banggai Luwuk",
+      "phoneNumber": "(0461) 21820",
+      "address": "Jl. Imam Bonjol No.14, Bungin Tim., Luwuk, Kabupaten Banggai, Sulawesi Tengah 94711",
+      "loc": [-0.933825, 122.822164]
+    },
+    {
+      "name": "RSU Mokopido Toli-Toli",
+      "phoneNumber": "(0453) 21301",
+      "address": "Jl. Lanoni No.37, Baru, Baolan, Kabupaten Toli-Toli, Sulawesi Tengah 94514",
+      "loc": [1.035896, 120.822748]
+    },
+    {
+      "name": "RSUD Kolonodale",
+      "phoneNumber": "(0465) 21010",
+      "address": "Jalan W Monginsidi No.2, Kolonodale, Petasia, Kabupaten Morowali, Sulawesi Tengah 94971",
+      "loc": [-1.972287, 121.336927]
+    },
+    {
+      "name": "RSUD Kendari",
+      "phoneNumber": "-",
+      "address": "Jl. Z.A. Sugianto No. 39., Kambu, Kendari, Kota Kendari, Sulawesi Tenggara 93111",
+      "loc": [-3.990029, 122.533465]
+    },
+    {
+      "name": "RS Islam Faisal",
+      "phoneNumber": "(0411) 871942",
+      "address": "Jl. A. P. Pettarani, Banta-Bantaeng, Kec. Rappocini, Kota Makassar, Sulawesi Selatan 90222",
+      "loc": [-5.162666, 119.432329]
+    },
+    {
+      "name": "RSUD Andi Makkasau",
+      "phoneNumber": "(0401) 27643",
+      "address": "Jl. Nurussamawati No.9, Bumi Harapan, Kec. Bacukiki Bar., Kota Pare-Pare, Sulawesi Selatan 91122",
+      "loc": [-4.034919, 119.633957]
+    },
+    {
+      "name": "RSU Dr. Wahidin Sudirohusodo",
+      "phoneNumber": "(0401) 584677",
+      "address": "Jl. Perintis Kemerdekaan No.11, Tamalanrea Jaya, Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan 90245",
+      "loc": [-5.134492, 119.493222]
+    },
+    {
+      "name": "RSUD Lakipadada Toraja",
+      "phoneNumber": "(0423) 22264",
+      "address": "Jl. Pongtiku, Tambunan, Makale Utara, Kabupaten Tana Toraja, Sulawesi Selatan 91812",
+      "loc": [-3.073174, 119.867779]
+    },
+    {
+      "name": "RS Akademis Jaury Jusuf Putra",
+      "phoneNumber": "(0411) 3617344",
+      "address": "Jl. Jend. M. Jusuf No.57A, Pattunuang, Kec. Wajo, Kota Makassar, Sulawesi Selatan 90156",
+      "loc": [-5.131051, 119.414883]
+    },
+    {
+      "name": "RSUD Kab. Sinjai",
+      "phoneNumber": "(0482) 21132",
+      "address": "Jl. Jenderal Sudirman No.47, Biringere, Sinjai Utara, Kabupaten Sinjai, Sulawesi Selatan 92615",
+      "loc": [-5.128458, 120.249170]
+    },
+    {
+      "name": "RSUD Dr. M. Haulussy",
+      "phoneNumber": "(0911) 344871",
+      "address": "Jl. Dr. Kayadoe, Benteng, Nusaniwe, Kel Benteng, Nusaniwe, Kota Ambon, Maluku",
+      "loc": [-3.708363, 128.165537]
+    },
+    {
+      "name": "RSUD Dr. Chasan Basoeri Ternate",
+      "phoneNumber": "(0921) 3121281",
+      "address": "Jl. Cempaka, Tanah Tinggi Bar., Ternate Sel., Kota Ternate, Maluku Utara",
+      "loc": [0.782180, 127.375722]
+    },
+    {
+      "name": "RSUD Dok II Jayapura",
+      "phoneNumber": "(0967) 533616 ext. 533781",
+      "address": "Jl. Kesehatan No.1, Dok II, Bayangkara, Jayapura Utara, Kota Jayapura, Papua",
+      "loc": [-2.534682, 140.710415]
+    }
+  ]

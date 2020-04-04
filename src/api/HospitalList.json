@@ -1,5 +1,41 @@
 [
     {
+      "name": "RSUD Dr. H. Abdul Moeloek",
+      "phoneNumber": "(0721) 703312",
+      "address": "Jl. Dr. Rivai No.6, Penengahan, Kec. Tj. Karang Pusat, Kota Bandar Lampung, Lampung 35112",
+      "loc": [-5.402913, 105.258657]
+    },
+    {
+      "name": "RSUD Dr. H. Bob Bazar, SKM",
+      "phoneNumber": "(0727) 322159",
+      "address": "Jl. Lettu Rohani No.14 B, Kedaton, Kec. Kalianda, Kabupaten Lampung Selatan, Lampung 35551",
+      "loc": [-5.727473, 105.596540]
+    },
+    {
+      "name": "RSD Mayjend HM Ryacudu",
+      "phoneNumber": "(0724) 22095",
+      "address": "Jl. Jend. Sudirman No.2, Kota Gapura, Kotabumi, Kabupaten Lampung Utara, Lampung 34511",
+      "loc": [-4.832623, 104.891448]
+    },
+    {
+      "name": "RSUD Ahmad Yani Metro",
+      "phoneNumber": "-",
+      "address": "Jl. Ahmad Yani No.13, Imopuro, Kec. Metro Pusat, Kota Metro, Lampung 34124",
+      "loc": [-5.115527, 105.310079]
+    },
+    {
+      "name": "RSU Kab. Tangerang",
+      "phoneNumber": "(021) 5523507",
+      "address": "Jl. Jend. Ahmad Yani No.9, RT.001/RW.003, Sukaasih, Kec. Tangerang, Kota Tangerang, Banten 15111",
+      "loc": [-6.169656, 106.635665]
+    },
+    {
+      "name": "RSUD SERANG",
+      "phoneNumber": "(0254) 355355",
+      "address": "Kotabaru, Kec. Serang, Kota Serang, Banten 42112",
+      "loc": [-6.118813, 106.154339]
+    },
+    {
       "name": "RSPI Prof. Dr. Sulianti Saroso",
       "phoneNumber": "(021) 6506559",
       "address": "Jl. Sunter Permai Raya, RT.2/RW.12, Papanggo, Tj. Priok, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14340",

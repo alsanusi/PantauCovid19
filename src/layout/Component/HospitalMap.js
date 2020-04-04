@@ -12,9 +12,41 @@ const useStyles = makeStyles({
 })
 
 const position = [
+  //  NTB
+  {
+    name: "RSUD Mataram",
+    phoneNumber: "(0370) 640774",
+    address: "Pagutan Raya, Jl. Bung Karno No.3, Pagesangan Tim., Kec. Mataram, Kota Mataram, Nusa Tenggara Bar. 83127",
+    loc: [-8.598916, 116.114332]
+  },
+  {
+    name: "RSU Dr. R Sudjono",
+    phoneNumber: "(0376) 21599",
+    address: "Jl. Prof. M Yamin SH No.55, Khusus Kota Selong, Selong, Kabupaten Lombok Timur, Nusa Tenggara Bar. 83611",
+    loc: [-8.650534, 116.528392]
+  },
+  {
+    name: "RSUD Praya",
+    phoneNumber: "(0370) 6635050",
+    address: "Jl. Basuki Rahmat, Bunut Baok, Praya, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83511",
+    loc: [-8.702009, 116.295071]
+  },
+  // NTB
+  {
+    name: "RSUD Prof. Dr. W Z Johannes",
+    phoneNumber: "(0380) 833614",
+    address: "Jl. Moch Hatta No.19, Kuanino, Kec. Kota Raja, Kota Kupang, Nusa Tenggara Tim.",
+    loc: [-10.168224, 123.585742]
+  },
+  {
+    name: "RSUD Dr. TC Hillers",
+    phoneNumber: "0812-6115-3944",
+    address: "JL Wairklau, No. 1, 86113, Kota Baru, Alok Tim., Kabupaten Sikka, Nusa Tenggara Tim.",
+    loc: [-8.622280, 122.204275]
+  },
   // Kalimantan Barat
   {
-    name: "RSUD Dr.Soedarso",
+    name: "RSUD Dr. Soedarso",
     phoneNumber: "(0561) 737701",
     address: "Jl. DR. Soedarso No.1, Bangka Belitung Laut, Kec. Pontianak Tenggara, Kota Pontianak, Kalimantan Barat 78111",
     loc: [-0.061427, 109.364595]
@@ -33,13 +65,13 @@ const position = [
   },
   // Kalimantan Tengah
   {
-    name: "RSUD Dr.Doris Sylvanus",
+    name: "RSUD Dr. Doris Sylvanus",
     phoneNumber: "-",
     address: "Jl. Palangkaraya, Bukit Tunggal, Kec. Jekan Raya, Kota Palangka Raya, Kalimantan Tengah 74874",
     loc: [-2.210637, 113.922997]
   },
   {
-    name: "RSUD Dr.Murjani Sampit",
+    name: "RSUD Dr. Murjani Sampit",
     phoneNumber: "(0531) 21010",
     address: "Jalan Haji Muhammad Arsyad No.65, Mentawa Baru Hilir, Mentawa Baru/Ketapan, Jl. H.M. Arsyad No.65, Mentawa Baru Hulu, Mentawa Baru/Ketapan, Kabupaten Kotawaringin Timur, Kalimantan Tengah 74321",
     loc: [-2.542647, 112.949043]
@@ -104,7 +136,7 @@ const position = [
   },
   // Gorontalo
   {
-    name: "RSU Porf.Dr.H.Aloei Saboe",
+    name: "RSU Porf. Dr. H. Aloei Saboe",
     phoneNumber: "(0435) 821218",
     address: "Jl. Profesor DR. H. Aloei Saboe, Wongkaditi, Kota Utara, Kota Gorontalo, Gorontalo 96115",
     loc: [-0.857597, 119.884025]
@@ -180,14 +212,14 @@ const position = [
   },
   // Maluku
   {
-    name: "RSUD Dr.M.Haulussy",
+    name: "RSUD Dr. M. Haulussy",
     phoneNumber: "(0911) 344871",
     address: "Jl. Dr. Kayadoe, Benteng, Nusaniwe, Kel Benteng, Nusaniwe, Kota Ambon, Maluku",
     loc: [-3.708363, 128.165537]
   },
   // Maluku Utara
   {
-    name: "RSUD Dr.Chasan Basoeri Ternate",
+    name: "RSUD Dr. Chasan Basoeri Ternate",
     phoneNumber: "(0921) 3121281",
     address: "Jl. Cempaka, Tanah Tinggi Bar., Ternate Sel., Kota Ternate, Maluku Utara",
     loc: [0.782180, 127.375722]

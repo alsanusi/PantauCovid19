@@ -1,5 +1,23 @@
 [
     {
+      "name": "RSU Sanglah",
+      "phoneNumber": "(0361) 227912",
+      "address": "Jl. Diponegoro, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113",
+      "loc": [-8.675714, 115.213204]
+    },
+    {
+      "name": "RSU Tabanan Bali",
+      "phoneNumber": "(0361) 811027",
+      "address": "Jl. Pahlawan No.14, Delod Peken, Kec. Tabanan, Kabupaten Tabanan, Bali 82121",
+      "loc": [-8.539100, 115.132221]
+    },
+    {
+      "name": "RSUD Sanjiwani Gianyar",
+      "phoneNumber": "(0362) 943049",
+      "address": "Jl. Ciung Wanara-Gianyar No.2, Gianyar, Kec. Gianyar, Kabupaten Gianyar, Bali 80511",
+      "loc": [-8.537146, 115.322532]
+    },
+    {
       "name": "RSUP Dr. Hasan Sadikin Bandung",
       "phoneNumber": "(022) 2034953",
       "address": "Jl. Pasteur No.38, Pasteur, Kec. Sukajadi, Kota Bandung, Jawa Barat 40161",

@@ -12,6 +12,83 @@ const useStyles = makeStyles({
 })
 
 const position = [
+  // Kalimantan Barat
+  {
+    name: "RSUD Dr.Soedarso",
+    phoneNumber: "(0561) 737701",
+    address: "Jl. DR. Soedarso No.1, Bangka Belitung Laut, Kec. Pontianak Tenggara, Kota Pontianak, Kalimantan Barat 78111",
+    loc: [-0.061427, 109.364595]
+  },
+  {
+    name: "RSUD Dr. Abdul Aziz",
+    phoneNumber: "(0562) 631798",
+    address: "Jl. Dr. Sutomo No.28, Pasiran, Singkawang Bar., Kota Singkawang, Kalimantan Barat 79123",
+    loc: [0.895527, 108.972717]
+  },
+  {
+    name: "RSUD Ade Mohammad Djoen Sintang",
+    phoneNumber: "Jl. Pattimura No.1, Tj. Puri, Kec. Sintang, Kabupaten Sintang, Kalimantan Barat 78613",
+    address: "(0565) 21002",
+    loc: [0.078496, 111.496008]
+  },
+  // Kalimantan Tengah
+  {
+    name: "RSUD Dr.Doris Sylvanus",
+    phoneNumber: "-",
+    address: "Jl. Palangkaraya, Bukit Tunggal, Kec. Jekan Raya, Kota Palangka Raya, Kalimantan Tengah 74874",
+    loc: [-2.210637, 113.922997]
+  },
+  {
+    name: "RSUD Dr.Murjani Sampit",
+    phoneNumber: "(0531) 21010",
+    address: "Jalan Haji Muhammad Arsyad No.65, Mentawa Baru Hilir, Mentawa Baru/Ketapan, Jl. H.M. Arsyad No.65, Mentawa Baru Hulu, Mentawa Baru/Ketapan, Kabupaten Kotawaringin Timur, Kalimantan Tengah 74321",
+    loc: [-2.542647, 112.949043]
+  },
+  // Kalimantan Selatan
+  {
+    name: "RSUD Ulin",
+    phoneNumber: "(0511) 3252180",
+    address: "Jl. A. Yani No.79, Sungai Baru, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70233",
+    loc: [-3.322799, 114.601189]
+  },
+  {
+    name: "RSUD H. Boejasin Pelaihari",
+    phoneNumber: "(0512) 21083",
+    address: "Jl. H. Boejasin No. 68A, Angsau, Pelaihari, Jl. H. Boejasin No.68A, Angsau, Kec. Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan 70814",
+    loc: [-3.799330, 114.777978]
+  },
+  // Kalimantan Utara
+  {
+    name: "RSUD Tarakan",
+    phoneNumber: "(0551) 21166",
+    address: "Jl. Pulau Irian No.1, Kp. Satu Skip, Tarakan Tengah, Kota Tarakan, Kalimantan Utara",
+    loc: [3.318225, 117.605067]
+  },
+  // Kalimantan Timur
+  {
+    name: "RSUD Dr. Kanujoso Djatiwibowo",
+    phoneNumber: "(0542) 873901",
+    address: "Jl. MT Haryono No.656, Batu Ampar, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur 76115",
+    loc: [-1.225504, 116.868166]
+  },
+  {
+    name: "RSUD Abdul Wahab Sjahranie",
+    phoneNumber: "(0541) 738118",
+    address: "Jl. Palang Merah No.1, Sidodadi, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75123",
+    loc: [-0.478977, 117.144267]
+  },
+  {
+    name: "RSUD Taman Husada Bontang",
+    phoneNumber: "(0548) 23000",
+    address: "Jl. Letjen S. Parman No.1, Belimbing, Bontang Bar., Kota Bontang, Kalimantan Timur 75331",
+    loc: [0.142677, 117.447809]
+  },
+  {
+    name: "RSUD Panglima Sebaya",
+    phoneNumber: "(0543) 24563",
+    address: "Jalan Ciptomangunkusimo No.2, Tepian Batang, Tanah Grogot, Kabupaten Paser, Kalimantan Timur 76251",
+    loc: [-1.873474, 116.178674]
+  },
   // Sulawesi Utara
   {
     name: "RSU Porf.Dr.RD Kandou",

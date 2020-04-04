@@ -1,5 +1,59 @@
 [
     {
+      "name": "RSUD Arifin Achmad",
+      "phoneNumber": "(0761) 21618",
+      "address": "Jl. Diponegoro No.2, Sumahilang, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28156",
+      "loc": [0.523380, 101.451841]
+    },
+    {
+      "name": "RSUD Muhammad Sani Kab. Karimun",
+      "phoneNumber": "(0777) 327808",
+      "address": "Jalan Poros No.1, Harjosari, Tebing, Kabupaten Karimun, Kepulauan Riau 29663",
+      "loc": [1.013768, 103.413743]
+    },
+    {
+      "name": "RSU Tanjung Pinang",
+      "phoneNumber": "(0771) 7335203",
+      "address": "Air Raja, Kec. Tanjungpinang Tim., Kota Tanjung Pinang, Kepulauan Riau 29125",
+      "loc": [0.923844, 104.500138]
+    },
+    {
+      "name": "RSUD Puri Husada Tembilahan",
+      "phoneNumber": "(0768) 22118",
+      "address": "Jl. Veteran No.52, Tembilahan Hilir, Tembilahan, Kabupaten Indragiri Hilir, Riau 29281",
+      "loc": [-0.322746, 103.163158]
+    },
+    {
+      "name": "RSUD Dumai",
+      "phoneNumber": "(0765) 440992",
+      "address": "Jl. Tj. Jati No.4, Buluh Kasap, Dumai Tim., Kota Dumai, Riau 28812",
+      "loc": [1.680420, 101.459535]
+    },
+    {
+      "name": "RS BP Batam",
+      "phoneNumber": "(0778) 322121",
+      "address": "Jalan Cipto Mangunkusumo No.01, Tj. Pinggir, Kec. Sekupang, Kota Batam, Kepulauan Riau 20444",
+      "loc": [1.129798, 103.930630]
+    },
+    {
+      "name": "RSUD Raden Mattaher Jambi",
+      "phoneNumber": "(0741) 61692",
+      "address": "Jl. Letjen Suprapto No.31, Telanaipura, Kec. Telanaipura, Kota Jambi, Jambi 36361",
+      "loc": [-1.602827, 103.580256]
+    },
+    {
+      "name": "RSUD Dr. H. Marsidi Judono",
+      "phoneNumber": "(0719) 22190",
+      "address": "Jl. Jend. Sudirman KM.5,5, Aik Rayak, Tj. Pandan, Kabupaten Belitung, Kepulauan Bangka Belitung 33411",
+      "loc": [-2.748841, 107.678227]
+    },
+    {
+      "name": "RSUD Pangkal Pinang",
+      "phoneNumber": "(0717) 422693",
+      "address": "Bukitbesar, Kec. Girimaya, Kota Pangkal Pinang, Kepulauan Bangka Belitung 33684",
+      "loc": [-2.143926, 106.124354]
+    },
+    {
       "name": "RSUD Dr. Mohammad Hoesin",
       "phoneNumber": "(0711) 354088",
       "address": "RW. 5, Jl. Jend. Sudirman KM.3,5, Sekip Jaya, Kec. Kemuning, Kota Palembang, Sumatera Selatan 30126",

@@ -1,5 +1,65 @@
 [
     {
+      "name": "RSUP Dr. KARIADI",
+      "phoneNumber": "(024) 8413476",
+      "address": "Jl. DR. Sutomo No.16, Randusari, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50244",
+      "loc": [-6.994073, 110.407522]
+    },
+    {
+      "name": "RSUD Dr. H. Soewondo Kendal",
+      "phoneNumber": "(0294) 381433",
+      "address": "Jl. Laut No.21, Ngilir, Kec. Kendal, Kabupaten Kendal, Jawa Tengah 51311",
+      "loc": [-6.917760, 110.206198]
+    },
+    {
+      "name": "RSUD Dr. Moewardi Surakarta",
+      "phoneNumber": "(0271) 637415",
+      "address": "Jl. Kolonel Sutarto No.132, Jebres, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126",
+      "loc": [-7.558079, 110.841665]
+    },
+    {
+      "name": "RSUD Banyumas",
+      "phoneNumber": "(0281) 796031",
+      "address": "Jl. Rumah Sakit No.1, Karangpucung, Kejawar, Kec. Banyumas, Kabupaten Banyumas, Jawa Tengah 53192",
+      "loc": [-7.529070, 109.292667]
+    },
+    {
+      "name": "RSUD Dr. Lukmonohadi Kudus",
+      "phoneNumber": "(0291) 444001",
+      "address": "Jalan Dr. Lukmonohadi No.19, Jl. Dr. Lukmono Hadi No.19, Cobowo, Ploso, Kec. Jati, Kabupaten Kudus, Jawa Tengah 59348",
+      "loc": [-6.818894, 110.836621]
+    },
+    {
+      "name": "RSUD Dr Soeselo Slawi Kab. Tegal",
+      "phoneNumber": "(0283) 491016",
+      "address": "Jl. DR. Soetomo No.63, Slawi Kulon, Kec. Slawi, Tegal, Jawa Tengah 52419",
+      "loc": [-6.993376, 109.137697]
+    },
+    {
+      "name": "RSUD Kraton Kab. Pekalongan",
+      "phoneNumber": "(0285) 423225",
+      "address": "Jl. Veteran No.31, Dukuh, Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51117",
+      "loc": [-6.881342, 109.667525]
+    },
+    {
+      "name": "RSUD Tidar",
+      "phoneNumber": "(0293) 362463",
+      "address": "Jl. Tidar No.30 A, Kemirirejo, Kec. Magelang Tengah, Kota Magelang, Jawa Tengah 56125",
+      "loc": [-7.485437, 110.218280]
+    },
+    {
+      "name": "RSUD Prof.Dr.Margono Soekarjo",
+      "phoneNumber": "0852-2795-4477",
+      "address": "Kebontebu, Berkoh, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53146",
+      "loc": [-7.437847, 109.267971]
+    },
+    {
+      "name": "RSUP Dr. Soeradji Tirtonegoro Klaten",
+      "phoneNumber": "(0272) 321020",
+      "address": "Jl. KRT Pringgodiningrat Jl. Dr. Soeradji Tirtonegoro No.1, Dusun 1, Tegalyoso, Kec. Klaten Sel., Kabupaten Klaten, Jawa Tengah 57424",
+      "loc": [-7.714279, 110.588666]
+    },
+    {
       "name": "RSUD Dr.Soedono Madiun",
       "phoneNumber": "(0351) 454657",
       "address": "Jl. Dr. Sutomo No.59, Kartoharjo, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63117",

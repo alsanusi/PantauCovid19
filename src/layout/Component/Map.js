@@ -30,7 +30,7 @@ const SimpleExample = () => {
     <Map center={[-3.316694, 114.590111]} zoom={6} className={classes.mapDiv}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {
         HospitalList.map((position, idx) =>

@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(1),
     borderRadius: 0, 
     boxShadow: "none",
-    backgroundColor: '#F5F6FA'
+    backgroundColor: '#fafafa'
   },
 }));
 
@@ -106,7 +106,7 @@ const headerStyles = makeStyles(theme => ({
     margin: `${theme.spacing(1)}px auto`,
     borderRadius: 0, 
     boxShadow: "none",
-    backgroundColor: '#F5F6FA'
+    backgroundColor: '#fafafa'
   },
   large: {
     width: theme.spacing(10),

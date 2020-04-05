@@ -63,7 +63,7 @@ function SymptomsCard({ ...props }) {
   const classes = cardStyles();
 
   return (
-    <Card className={classes.root} style={{boxShadow: "none", backgroundColor: "#F5F6FA"}}>
+    <Card className={classes.root} style={{boxShadow: "none", backgroundColor: "#fafafa"}}>
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2" style={{fontWeight: 'bold'}}>
@@ -88,7 +88,7 @@ const headerStyles = makeStyles(theme => ({
     margin: `${theme.spacing(1)}px auto`,
     borderRadius: 0, 
     boxShadow: "none",
-    backgroundColor: '#F5F6FA'
+    backgroundColor: '#fafafa'
   },
   large: {
     width: theme.spacing(10),

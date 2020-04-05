@@ -13,8 +13,6 @@ const useStyles = makeStyles({
     width: '100%',
     position: 'absolute',
     overflow: 'hidden',
-    top: 0,
-    left: 0
   },
 })
 

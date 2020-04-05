@@ -58,7 +58,7 @@ export default function MaterialTableDemo() {
       data={topListCountryData}
       options={{
         headerStyle: {
-          backgroundColor: '#01579b',
+          backgroundColor: '#E74C3C',
           color: '#FFF',
           fontWeight: 'bold'
         }

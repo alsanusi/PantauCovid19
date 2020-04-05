@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core';
 import { Grid } from '@material-ui/core/';
 import Footer from '../Component/Footer';
 import Loading from '../Component/Loading';
+import Menu from '../Component/Menu';
 
 const HospitalMap = lazy(() => import('../Component/Map'));
 
@@ -26,6 +27,9 @@ export default function CenteredGrid() {
     <div className={classes.root}>
       <Suspense fallback={<Loading/>}>
         <Grid container justify="center" className={classes.padding}>
+          <Grid item md={12} xs={12}>
+            <Menu/>
+          </Grid>
           <Grid item md={12} xs={12}>
             <HospitalMap/>
           </Grid>

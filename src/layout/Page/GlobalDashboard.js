@@ -4,6 +4,7 @@ import { Grid } from '@material-ui/core/';
 import Header from '../Component/Header';
 import Footer from '../Component/Footer';
 import Loading from '../Component/Loading';
+import Menu from '../Component/Menu';
 
 const TopListCountryTableData = lazy(() => import('../GlobalComponent/GlobalTable'));
 const GlobalData = lazy(() => import('../GlobalComponent/GlobalCard'));
@@ -30,6 +31,7 @@ export default function CenteredGrid() {
       <Suspense fallback={<Loading/>}>
       <Grid container justify="center" className={classes.padding}>
         <Grid item md={12} xs={12}>
+          <Menu/>
           <Header/>
         </Grid>
         <Grid item md={4} xs={12}>

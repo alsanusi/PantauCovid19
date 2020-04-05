@@ -86,17 +86,19 @@ export default function Dashboard() {
   });
 
   useEffect(() => {
+    let dataResponse = {};
     CoronaApi.getGlobalData().then({
       complete:(response, e) => {
         if(e) {
           console.log(e)
           window.location.reload()
         } else {
+          dataResponse = response.data
           setGlobalData({
-            confirmed: response.data.confirmed,
-            deaths: response.data.deaths,
-            recovered: response.data.recovered,
-            created: response.data.created
+            confirmed: dataResponse.confirmed,
+            deaths: dataResponse.deaths,
+            recovered: dataResponse.recovered,
+            created: dataResponse.created
           })
         }
       }

@@ -79,17 +79,19 @@ export default function IndonesiaCard() {
   });
 
   useEffect(() => {
+    let dataResponse = {};
     CoronaApi.getIndonesiaSummaryData().then({
       complete:(response, e) => {
         if(e) {
           console.log(e)
           window.location.reload()
         } else {
+          dataResponse = response.data[0]
           setIndonesiaData({
-            confirmed: response.data[0].totalConfirmed,
-            deaths: response.data[0].totalDeaths,
-            recovered: response.data[0].totalRecovered,
-            daily: response.data[0].dailyConfirmed
+            confirmed: dataResponse.totalConfirmed,
+            deaths: dataResponse.totalDeaths,
+            recovered: dataResponse.totalRecovered,
+            daily: dataResponse.dailyConfirmed
           })
         }
       }

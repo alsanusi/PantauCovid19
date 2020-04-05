@@ -1,13 +1,11 @@
 import React, { Suspense, lazy } from 'react';
 import { makeStyles } from '@material-ui/core';
 import { Grid } from '@material-ui/core/';
-import Menu from './Component/Menu';
-import Header from './Component/Header';
-import Footer from './Component/Footer';
-import Loading from './Component/Loading';
+import Header from '../Component/Header';
+import Footer from '../Component/Footer';
+import Loading from '../Component/Loading';
 
-const TopListCountryTableData = lazy(() => import('./GlobalComponent/GlobalTable'));
-const GlobalData = lazy(() => import('./GlobalComponent/GlobalCard'));
+const AvoidCovid = lazy(() => import('../AboutCovid/Card'));
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,14 +29,10 @@ export default function CenteredGrid() {
       <Suspense fallback={<Loading/>}>
       <Grid container justify="center" className={classes.padding}>
         <Grid item md={12} xs={12}>
-          <Menu/>
           <Header/>
         </Grid>
-        <Grid item md={4} xs={12}>
-          <GlobalData/>
-        </Grid>
-        <Grid item md={7} xs={12}>
-          <TopListCountryTableData/>
+        <Grid item md={12} xs={12}>
+          <AvoidCovid/>
         </Grid>
         <Grid item md={12} xs={12}>
           <Footer/>

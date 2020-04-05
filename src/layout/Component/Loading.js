@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     paddingTop: theme.spacing(40),
     paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2)
+    paddingRight: theme.spacing(2),
   },
   paper: {
     padding: theme.spacing(2),
@@ -23,7 +23,7 @@ export default function CenteredGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={12}>
+        <Grid item xs={12} md>
             <Animation json={require("../../assets/lottie/loading-data.json")} autoplay="true" style={{'width': '250px'}}/>
         </Grid>
       </Grid>

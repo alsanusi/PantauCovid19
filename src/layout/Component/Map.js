@@ -6,6 +6,8 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import HospitalList from '../../api/HospitalList.json'
 import HomeIcon from '@material-ui/icons/Home';
 import L from 'leaflet'
+import PieChart from './PieChart'
+import { Grid } from '@material-ui/core/';
 
 const useStyles = makeStyles({
   mapDiv: {
@@ -15,6 +17,16 @@ const useStyles = makeStyles({
     overflow: 'hidden',
   },
 })
+
+const AnalyticsChart = () => {
+  return (
+    <Grid container justify="center">
+      <Grid item md={12} xs={12}>
+        <PieChart/>
+      </Grid>
+    </Grid>
+  )
+}
 
 const hospitalIcon = L.icon({ 
   iconUrl: require("../../assets/img/hospital.svg"),
@@ -38,10 +50,11 @@ const SimpleExample = () => {
             <Popup>
               <div style={{ textAlign: 'center' }}>{"Rumah Sakit Penanganan COVID19"}</div>
               <hr style={{border: '1px solid red', marginBottom: '20px'}}/>
+              <AnalyticsChart/>
               <Bold>{position.name}</Bold>
               <br />
               <div style={{display: 'flex', alignItems: 'center'}}>
-                <PhoneIcon style={{ fontSize: '20px', marginRight: '10px' }}/> <a href="tel:[position.phoneNumber]"><div>{position.phoneNumber}</div></a>
+                <PhoneIcon style={{ fontSize: '20px', marginRight: '10px' }}/> {position.phoneNumber === "-" ? <div> - </div> : <a href="tel:[position.phoneNumber]"><div>{position.phoneNumber}</div></a>}
               </div>
               <br />
               <div style={{display: 'flex', alignItems: 'center'}}>

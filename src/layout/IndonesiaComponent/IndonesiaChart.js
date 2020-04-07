@@ -10,13 +10,6 @@ import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles(theme => ({
-    root: {
-      width: '100%',
-    },
-    container: {
-      maxHeight: 340,
-      borderTop: `4px solid #4880FF`
-    },
     padding: {
       paddingTop: theme.spacing(2),
       paddingLeft: theme.spacing(4),

@@ -1,28 +1,31 @@
 import React from 'react';
 import {
-  PieChart, Pie, ResponsiveContainer, Cell, Tooltip
+  PieChart, Pie, ResponsiveContainer, Cell, Tooltip, Legend
 } from 'recharts';
+import { Typography } from '@material-ui/core';
+import { useTranslation } from 'react-i18next';
 
-const data = [
-  { name: 'Group A', value: 400 }, 
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 }
-];
+const COLORS = ['#E74C3C', '#28B463', '#17202A'];
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
-
-export default function MapChart() {
+export default function MapChart({...props}) {
+    const {t} = useTranslation();
 
 return (
-    <ResponsiveContainer height={200}>
-      <PieChart>
-        <Pie dataKey="value" startAngle={180} endAngle={0} data={data} cx={140} cy={120} fill="#8884d8" label>
-        {
-            data.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />)
-        }
-        </Pie>
-        <Tooltip />
-      </PieChart>
-    </ResponsiveContainer>
+    <div>
+        <ResponsiveContainer height={200}>
+        <PieChart>
+            <Pie dataKey="value" startAngle={180} endAngle={0} data={props.data} cx={140} cy={120} fill="#8884d8" label>
+            {
+                props.data.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />)
+            }
+            </Pie>
+            <Tooltip />
+            <Legend height={40}/>
+        </PieChart>
+        </ResponsiveContainer>
+        <Typography variant="caption">
+            {t("mapNote")}
+        </Typography>
+    </div>
 );
 }

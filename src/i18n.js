@@ -44,7 +44,8 @@ i18n.use(LanguageDetector).init({
                         stayHealthy: "Stay Healthy",
                         stayHealthyDesc: "Stay healthy by eating clean food, drink more mineral water and do some in-house sport."
                     }
-                }
+                },
+                mapNote: "Note: Total data follow by the province."
             }
         },
         id: {
@@ -88,7 +89,8 @@ i18n.use(LanguageDetector).init({
                         stayHealthy: "Pola Hidup Sehat",
                         stayHealthyDesc: "Tetap sehat dengan mengonsumsi makanan bersih, minum lebih banyak air mineral, dan berolahraga di rumah."
                     }
-                }
+                },
+                mapNote: "Keterangan: Total data mengikuti provinsi."
             }
         }
     },

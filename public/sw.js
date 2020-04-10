@@ -2,8 +2,8 @@ var CACHE_NAME = 'pantaucovid19-cache-v1';
 var urlsToCache = [
     '/',
     '/index.html',
-    '/emergencyMap',
-    '/global'
+    // '/emergencyMap',
+    // '/global'
 ];
 
 self.addEventListener('install', function (event) {

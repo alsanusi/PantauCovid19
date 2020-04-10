@@ -84,7 +84,7 @@ export default function IndonesiaCard() {
       complete:(response, e) => {
         if(e) {
           console.log(e)
-          window.location.reload()
+          DataLoading()
         } else {
           dataResponse = response.data[0]
           setIndonesiaData({

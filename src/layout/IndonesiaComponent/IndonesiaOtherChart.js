@@ -43,7 +43,6 @@ export default function Example() {
           complete:(response, e) => {
             if(e) {
               console.log(e)
-              window.location.reload();
             } else {
               data = [...response.data];
               data ? setIndonesianData(restructureData(data)) : setIndonesianData([])

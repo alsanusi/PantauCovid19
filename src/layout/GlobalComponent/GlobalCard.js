@@ -10,7 +10,7 @@ import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import Animation from '../../components/Animation';
 import { useTranslation } from 'react-i18next';
 
-const useStyles = theme => ({
+const useStyles = () => ({
   root: {
     flexGrow: 1,
     overflow: 'hidden',

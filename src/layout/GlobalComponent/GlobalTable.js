@@ -35,7 +35,6 @@ export default function MaterialTableDemo() {
       complete:(response, e) => {
         if(e) {
           console.log(e)
-          window.location.reload();
         } else {
          if(response) {
             data = [...response.data];
